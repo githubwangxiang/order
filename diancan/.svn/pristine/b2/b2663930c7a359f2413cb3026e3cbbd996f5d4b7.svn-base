@@ -1,0 +1,16 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class IndexController extends Controller {
+    public function index(){
+    	//查询食物
+    	$food = D('Food')->limit(3)->select();
+    	$this->assign('food',$food);
+
+    	//查询餐馆
+    	$rest = D('Restaurant')->limit(5)->select();
+    	$this->assign('rest',$rest);
+     	$this->display();
+
+    }
+}

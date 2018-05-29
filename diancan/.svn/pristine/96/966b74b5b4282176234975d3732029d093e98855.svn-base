@@ -1,0 +1,11 @@
+<?php
+namespace Home\COntroller;
+use Think\Controller;
+class  ResController extends Controller{
+	public function index(){
+		$this -> display();
+	} 
+	
+}
+
+?>

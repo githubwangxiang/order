@@ -1,0 +1,40 @@
+<!--商品详情 有空加库存、详情介绍-->
+<!--Start content-->
+<section class="slp">
+    <section class="food-hd">
+        <div class="foodpic">
+            <img src="{$goods.goods_logo}" id="showimg">
+        </div>
+        <div class="foodtext">
+            <div class="foodname_a">
+                <h1>{$goods.goods_name}</h1>
+                <br />
+            </div>
+
+            <div class="price_a">
+                <p class="price01">所需积分：<img src="__PUBLIC__/Home/images/jf.png"><span>&nbsp;{$goods.goods_grade}</span></p>
+            </div>
+            <br /><br /><br />
+            <form action="cart.html">
+                <div class="BuyNo">
+                    <span>我要换购：<input type="number" name="Number" required autofocus min="1" value="1"/>份</span>
+                    <div class="Buybutton">
+                        <input name="" type="submit" value="加入购物车" class="BuyB">
+                        <a href="/"><span class="Backhome">进入店铺首页</span></a>
+                    </div>
+                </div>
+        </div>
+        <div class="viewhistory">
+            <span class="VHtitle">看了又看</span>
+            <ul class="Fsulist">
+                <volist name="food" id="vol">
+                <li>
+                    <a href="__MODULE__/Food/detail/id/{$vol.id}" target="_blank" title="{$vol.food_name}"><img src="{$vol.is_logo_small}"></a>
+                    <p>{$vol.food_name}</p>
+                    <p>{$vol.food_price}</p>
+                </li>
+                </volist>
+            </ul>
+        </div>
+    </section>
+</section>

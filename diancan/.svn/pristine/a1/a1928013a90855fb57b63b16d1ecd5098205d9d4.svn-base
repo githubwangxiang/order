@@ -1,0 +1,55 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class IndexController extends Controller {
+    public function index(){
+    	//查询食物
+    	$food = D('Food')->limit(3)->select();
+    	$this->assign('food',$food);
+
+    	//查询餐馆
+    	$rest = D('Restaurant')->limit(5)->select();
+
+    	$this->assign('rest',$rest);
+     	$this->display();
+    }
+
+    //点击点菜->城市获取食物
+    public function foodcity(){
+    	//接收餐馆的城市
+    	$res_city = I('post.data');
+    	dunmp($res_city);die;
+    	//食物和餐馆连表查询
+     	//接收餐馆表里面餐馆所属的城市
+     	 
+     	 $food_rest = D('Food')->alias('t1')->field('t1.*,t2.res_city')->join("left join restaurant t2 on t1.res_id = t2.id")->where("res_city like '%$res_city%'")->select();
+              dump($food_rest); die;
+            $str = "";
+			foreach($food_rest as $vol){
+			  $str.='<a href="detailsp.html" target="_blank" title="菜品名称">
+			      <figure>
+			       <img src="$vol.food_logo">
+			       <figcaption>
+			       <span class="title">$vol.food_name</span>
+			       <span class="price"><i>￥</i>$vol.food_nowprice</span>
+			       </figcaption>
+			      </figure>
+			      </a>';
+			}
+
+		 	 if($food_rest){
+		 	 	$return = array(
+		 	 			'code'=>10000,
+		 	 			'msg'=>'success',
+		 	 			'food_rest'=>$str
+		 	 		);
+		 	 	$this->ajaxReturn($return);
+		 	 }else{
+		 	 	$return = array(
+		 	 			'code'=>10001,
+		 	 			'msg'=>'服务器异常'
+		 	 		);
+		 	 	$this->ajaxReturn($return);
+		 	 }
+	}
+}

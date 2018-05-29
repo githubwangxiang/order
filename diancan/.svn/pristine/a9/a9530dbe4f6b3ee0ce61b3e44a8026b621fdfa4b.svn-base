@@ -1,0 +1,61 @@
+<?php
+namespace Home\COntroller;
+use Think\Controller;
+class  ResController extends Controller{
+		// 订单页
+	public function index(){
+		// 查询所有分类
+		$cate = D('cate') -> select();
+		// dump($cate);die;
+		$this ->assign('cate',$cate);
+		// 取指定分类下的商品
+		$cate_3 = D('cate') -> where(['id' => 3]) ->find();
+		$this -> assign('cate_3',$cate_3);
+		// 取分类下的商品信息
+        $rest =D('restaurant')-> limit(3)-> select();
+        // dump($rest);die;
+        $this -> assign('rest',$rest);
+        // dump($rest);die;
+		// 定义title页面
+		$this -> assign('title','首页');
+		// 以下是翻页
+		$model = D('Restaurant');
+            //查询总记录数
+		    $total = $model -> count();
+		    //每页显示条数
+		    $pagesize = 2;
+		    //实例化Page类
+		    $page = new \Think\Page($total, $pagesize);
+		    //修改分页栏显示定制数组
+		    $page -> setConfig('prev', '上一页');
+		    $page -> setConfig('next', '下一页');
+		    $page -> setConfig('first', '首页');
+		    $page -> setConfig('last', '尾页');
+		    $page -> setConfig('theme', '%HEADER% %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
+		    //设置分页类的属性
+		    $page -> rollPage = 4;
+		    $page -> lastSuffix = false;
+		    //获取分页栏的html代码 使用show方法
+		    $page_html = $page -> show();
+		    $this -> assign('page_html', $page_html);
+		    //查询当前页数据
+		    $data = $model -> limit($page -> firstRow, $page -> listRows) -> select();
+		    //变量赋值
+		    $this -> assign('data', $data);
+		$this -> display();
+	} 
+	// 商品详情页
+	public function detail(){
+		// 接收id参数
+		$id = I('get.id',0,'intval');
+    	if($id <= 0){
+    		$this -> error('参数不正确');
+    	}
+    	// 查询商品表
+    	$rest = D('restaurant') -> where(['id' => $id]) -> find();
+    	$this -> assign('rest',$rest);
+		$this -> display();
+	}
+}
+
+?>

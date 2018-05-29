@@ -1,0 +1,1079 @@
+[ 2017-11-11T13:59:43+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '1' AND (  `res_price` <= '20' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T14:00:14+08:00 ] 127.0.0.1 /index.php/Home/Res/__CONTROLLER__/detail/id/1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-11-11T14:00:45+08:00 ] 127.0.0.1 /index.php/Home/Res/__CONTROLLER__/detail/id/1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-11-11T14:00:50+08:00 ] 127.0.0.1 /index.php/Home/Res/__CONTROLLER__/detail/id/1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-11-11T14:01:34+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001244s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0067s ]
+
+[ 2017-11-11T14:01:35+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0055s ]
+
+[ 2017-11-11T14:01:39+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001250s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0051s ]
+
+[ 2017-11-11T14:01:40+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0051s ]
+
+[ 2017-11-11T14:01:41+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001544s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0054s ]
+
+[ 2017-11-11T14:01:42+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001489s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0056s ]
+
+[ 2017-11-11T14:01:43+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001393s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0061s ]
+
+[ 2017-11-11T14:02:57+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001277s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0064s ]
+
+[ 2017-11-11T14:03:06+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001726s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0052s ]
+
+[ 2017-11-11T14:03:13+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0061s ]
+
+[ 2017-11-11T14:04:17+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003279s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0054s ]
+
+[ 2017-11-11T14:05:04+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001535s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0051s ]
+
+[ 2017-11-11T14:05:16+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002107s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0048s ]
+
+[ 2017-11-11T14:05:22+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+
+[ 2017-11-11T14:05:23+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0048s ]
+
+[ 2017-11-11T14:05:24+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001644s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0048s ]
+
+[ 2017-11-11T14:05:25+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0061s ]
+
+[ 2017-11-11T14:06:11+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0056s ]
+
+[ 2017-11-11T14:11:48+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001115s ]
+NOTIC: [8] Use of undefined constant user_info - assumed 'user_info' E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 95 行.
+
+[ 2017-11-11T14:12:45+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001343s ]
+NOTIC: [8] Use of undefined constant user_info - assumed 'user_info' E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 95 行.
+
+[ 2017-11-11T14:13:05+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+NOTIC: [8] Use of undefined constant user_info - assumed 'user_info' E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 95 行.
+
+[ 2017-11-11T14:13:58+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+NOTIC: [8] Use of undefined constant user_info - assumed 'user_info' E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 95 行.
+
+[ 2017-11-11T14:14:37+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+NOTIC: [8] Use of undefined constant user_info - assumed 'user_info' E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 95 行.
+
+[ 2017-11-11T14:16:17+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001229s ]
+NOTIC: [8] Use of undefined constant user_info - assumed 'user_info' E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 95 行.
+
+[ 2017-11-11T14:17:33+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001261s ]
+NOTIC: [8] Use of undefined constant user_info - assumed 'user_info' E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 95 行.
+
+[ 2017-11-11T14:19:04+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `cart` WHERE `user_id` = '1' AND `food_id` = '6' AND `is_order` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `cart` (`user_id`,`food_id`,`is_food`,`num`) VALUES ('1','6','1','1') [ RunTime:0.0485s ]
+
+[ 2017-11-11T14:21:10+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001524s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '1' AND (  `res_price` <= '20' )  [ RunTime:0.0005s ]
+
+[ 2017-11-11T14:21:11+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001307s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '20' AND (  `res_price` <= '40' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T14:21:21+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '1' AND (  `res_price` <= '20' )  [ RunTime:0.0005s ]
+
+[ 2017-11-11T14:21:23+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '80' AND (  `res_price` <= '100' )  [ RunTime:0.0005s ]
+
+[ 2017-11-11T14:21:24+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001480s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '60' AND (  `res_price` <= '80' )  [ RunTime:0.0005s ]
+
+[ 2017-11-11T14:21:25+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '40' AND (  `res_price` <= '60' )  [ RunTime:0.0005s ]
+
+[ 2017-11-11T14:21:27+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '1' AND (  `res_price` <= '20' )  [ RunTime:0.0005s ]
+
+[ 2017-11-11T14:21:30+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '80' AND (  `res_price` <= '100' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T14:21:35+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '60' AND (  `res_price` <= '80' )  [ RunTime:0.0007s ]
+
+[ 2017-11-11T14:21:40+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '40' AND (  `res_price` <= '60' )  [ RunTime:0.0005s ]
+
+[ 2017-11-11T14:21:45+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '20' AND (  `res_price` <= '40' )  [ RunTime:0.0007s ]
+
+[ 2017-11-11T14:21:48+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '1' AND (  `res_price` <= '20' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T14:21:51+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '80' AND (  `res_price` <= '100' )  [ RunTime:0.0005s ]
+
+[ 2017-11-11T14:22:36+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '1' AND (  `res_price` <= '20' )  [ RunTime:0.0005s ]
+
+[ 2017-11-11T14:22:38+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001216s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '20' AND (  `res_price` <= '40' )  [ RunTime:0.0005s ]
+
+[ 2017-11-11T14:22:40+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '40' AND (  `res_price` <= '60' )  [ RunTime:0.0005s ]
+
+[ 2017-11-11T14:22:42+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '60' AND (  `res_price` <= '80' )  [ RunTime:0.0005s ]
+
+[ 2017-11-11T14:22:44+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '80' AND (  `res_price` <= '100' )  [ RunTime:0.0007s ]
+
+[ 2017-11-11T14:24:09+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001372s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '1' AND (  `res_price` <= '20' )  [ RunTime:0.0005s ]
+
+[ 2017-11-11T14:25:24+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001121s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '20' AND (  `res_price` <= '40' )  [ RunTime:0.0008s ]
+
+[ 2017-11-11T14:26:13+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '20' AND (  `res_price` <= '40' )  [ RunTime:0.0007s ]
+
+[ 2017-11-11T14:27:20+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '1' AND (  `res_price` <= '20' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T14:29:53+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '60' AND (  `res_price` <= '80' )  [ RunTime:0.0005s ]
+
+[ 2017-11-11T14:29:54+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001350s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '40' AND (  `res_price` <= '60' )  [ RunTime:0.0005s ]
+
+[ 2017-11-11T14:29:55+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '20' AND (  `res_price` <= '40' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T14:29:56+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '1' AND (  `res_price` <= '20' )  [ RunTime:0.0005s ]
+
+[ 2017-11-11T14:32:34+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001354s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `restaurant`  [ RunTime:0.0006s ]
+
+[ 2017-11-11T14:32:58+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '1' AND (  `res_price` <= '20' )  [ RunTime:0.0005s ]
+
+[ 2017-11-11T14:33:00+08:00 ] 127.0.0.1 /index.php/Home/Res/restdeet
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `restaurant` WHERE `res_price` >= '20' AND (  `res_price` <= '40' )  [ RunTime:0.0005s ]
+
+[ 2017-11-11T15:18:25+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001611s ]
+ERR: 非法操作:select
+
+[ 2017-11-11T15:18:32+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001217s ]
+ERR: 非法操作:select
+
+[ 2017-11-11T15:21:55+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001546s ]
+
+[ 2017-11-11T15:22:08+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+
+[ 2017-11-11T15:23:00+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2017-11-11T15:23:40+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001277s ]
+
+[ 2017-11-11T15:29:20+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001364s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+NOTIC: [8] Undefined variable: fenlei E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 171 行.
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_pro  like '%北京省%' )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001133s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
+
+[ 2017-11-11T15:30:48+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001250s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0051s ]
+NOTIC: [8] Undefined variable: fenlei E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 172 行.
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_pro  like '%北京省%' )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001096s ]
+
+[ 2017-11-11T15:32:53+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001229s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0056s ]
+NOTIC: [8] Undefined variable: fenlei E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 172 行.
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_pro='北京市' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001129s ]
+
+[ 2017-11-11T15:34:20+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: fenlei E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 172 行.
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t1.res_pro='null' )  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000901s ]
+
+[ 2017-11-11T15:34:23+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: fenlei E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 172 行.
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t1.res_pro='北京省' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001074s ]
+
+[ 2017-11-11T15:35:03+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0059s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t1.cate_id=t2.id )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2017-11-11T15:36:04+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0053s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t1.cate_id=t2.id )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000841s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000884s ]
+
+[ 2017-11-11T15:36:55+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0060s ]
+ERR: 1054:Unknown column '上海烤鸭' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name=上海烤鸭 ) 
+ERR: 1054:Unknown column '上海烤鸭' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name=上海烤鸭 ) 
+
+[ 2017-11-11T15:37:23+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0051s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2017-11-11T15:38:38+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001218s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0057s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t1.res_pro='北京市' )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000877s ]
+
+[ 2017-11-11T15:39:33+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0049s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭'and t1.res_pro='北京市' )  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000957s ]
+
+[ 2017-11-11T15:40:33+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: fenlei E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 172 行.
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name=''and t1.res_pro='北京省' )  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000862s ]
+
+[ 2017-11-11T15:41:12+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002006s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: fenlei E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 172 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and t1.res_pro=null )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name= and t1.res_pro=null ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and t1.res_pro=null )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name= and t1.res_pro=null ) 
+
+[ 2017-11-11T15:41:15+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001275s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0051s ]
+NOTIC: [8] Undefined variable: fenlei E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 172 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and t1.res_pro=北京省 )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name= and t1.res_pro=北京省 ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and t1.res_pro=北京省 )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name= and t1.res_pro=北京省 ) 
+
+[ 2017-11-11T15:42:05+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001115s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0057s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: feilei E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 174 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000893s ]
+
+[ 2017-11-11T15:43:37+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0051s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京省' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001072s ]
+
+[ 2017-11-11T15:43:53+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0058s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000970s ]
+
+[ 2017-11-11T15:43:56+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001257s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0059s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='牛排' and t1.res_pro='北京省' )  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000942s ]
+
+[ 2017-11-11T15:43:57+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0051s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京省' )  [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001529s ]
+
+[ 2017-11-11T15:44:11+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001190s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0049s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京市' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000938s ]
+
+[ 2017-11-11T15:44:15+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0056s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京市' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000891s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2017-11-11T15:44:35+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001534s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0049s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2017-11-11T15:45:32+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0052s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' )  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000803s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2017-11-11T15:45:34+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0051s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京省' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000875s ]
+
+[ 2017-11-11T17:26:24+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0058s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' )  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000870s ]
+
+[ 2017-11-11T17:43:49+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001923s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='null' )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 210 行.
+
+[ 2017-11-11T17:44:47+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001239s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0072s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='null' and t1.res_pro='北京省' )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 210 行.
+
+[ 2017-11-11T17:44:48+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001508s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0063s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京省' )  [ RunTime:0.0008s ]
+
+[ 2017-11-11T17:45:19+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001452s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0053s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京市' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T17:45:22+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001264s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京市' )  [ RunTime:0.0007s ]
+
+[ 2017-11-11T17:46:53+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0063s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京市' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T17:47:01+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002297s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京市' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T17:47:05+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001730s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0062s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='牛排' and t1.res_pro='北京市' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T17:47:08+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0062s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='红烧排骨' and t1.res_pro='北京市' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T17:47:12+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001311s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0057s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京市' )  [ RunTime:0.0007s ]
+
+[ 2017-11-11T17:48:11+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='null' )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 210 行.
+
+[ 2017-11-11T17:48:12+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002473s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0052s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京市' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T17:48:15+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0059s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京市' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T17:48:18+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001254s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0053s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='牛排' and t1.res_pro='北京市' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T17:48:20+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001744s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0063s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='红烧排骨' and t1.res_pro='北京市' )  [ RunTime:0.0007s ]
+
+[ 2017-11-11T17:48:24+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0060s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='回转寿司' and t1.res_pro='北京市' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T17:48:25+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0063s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='虾米' and t1.res_pro='北京市' )  [ RunTime:0.0008s ]
+
+[ 2017-11-11T17:48:26+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0053s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='虾米' and t1.res_pro='北京省' )  [ RunTime:0.0008s ]
+
+[ 2017-11-11T17:48:27+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001709s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0061s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T17:48:29+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002032s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0057s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T17:48:30+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0060s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='牛排' and t1.res_pro='北京省' )  [ RunTime:0.0007s ]
+
+[ 2017-11-11T17:48:32+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001279s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0061s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='红烧排骨' and t1.res_pro='北京省' )  [ RunTime:0.0008s ]
+
+[ 2017-11-11T17:48:33+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001382s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0067s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京省' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T17:48:34+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001331s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0063s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='asda' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T17:48:35+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001368s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0065s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='asda' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T17:48:41+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0061s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='牛排' and t1.res_pro='asda' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T19:00:05+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001430s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0060s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='null' and t1.res_pro='北京市' )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 210 行.
+
+[ 2017-11-11T19:00:06+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京市' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T19:03:53+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001460s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0051s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京省' )  [ RunTime:0.0009s ]
+
+[ 2017-11-11T19:07:21+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0051s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='null' and t1.res_pro='北京市' )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 210 行.
+
+[ 2017-11-11T19:07:22+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001472s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京市' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T19:13:16+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='null' )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 210 行.
+
+[ 2017-11-11T19:13:24+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001597s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0052s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京省' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T19:14:14+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001250s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0053s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='null' and t1.res_pro='北京市' )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 210 行.
+
+[ 2017-11-11T19:14:18+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0056s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京市' )  [ RunTime:0.0006s ]
+
+[ 2017-11-11T19:28:12+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001532s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0054s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='null' )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 210 行.
+
+[ 2017-11-11T19:28:13+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001372s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京市' )  [ RunTime:0.0007s ]
+
+[ 2017-11-11T19:32:09+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0066s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='' and t1.res_pro='' )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 210 行.
+
+[ 2017-11-11T19:32:33+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0057s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='' and t1.res_pro='' )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 210 行.
+
+[ 2017-11-11T19:33:09+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001663s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0058s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='' and t1.res_pro='' )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 210 行.
+
+[ 2017-11-11T19:36:35+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001170s ]
+NOTIC: [8] Undefined variable: shu E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+NOTIC: [8] Undefined variable: shu E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 176 行.
+NOTIC: [8] Undefined variable: shu E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 176 行.
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='' and t1.res_pro='' ) AND `res_price` >= null AND (  `res_price` <= null )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 216 行.
+
+[ 2017-11-11T19:37:57+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+NOTIC: [8] Undefined variable: shu E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0051s ]
+NOTIC: [8] Undefined variable: shu E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 176 行.
+NOTIC: [8] Undefined variable: shu E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 176 行.
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='' and t1.res_pro='' ) AND `res_price` >= null AND (  `res_price` <= null )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 216 行.
+
+[ 2017-11-11T19:39:19+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001636s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0054s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0011s ]
+
+[ 2017-11-11T19:40:06+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0158s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0010s ]
+
+[ 2017-11-11T19:40:08+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0054s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0010s ]
+
+[ 2017-11-11T19:50:38+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001428s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0065s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0012s ]
+
+[ 2017-11-11T19:56:32+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001901s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0059s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0012s ]
+
+[ 2017-11-11T19:57:39+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0036s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0010s ]
+
+[ 2017-11-11T19:57:43+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0057s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0011s ]
+
+[ 2017-11-11T19:58:06+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0056s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0016s ]
+
+[ 2017-11-11T19:58:08+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001239s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0051s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0010s ]
+
+[ 2017-11-11T19:58:22+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0052s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0011s ]
+
+[ 2017-11-11T19:58:25+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001552s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0056s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0011s ]
+
+[ 2017-11-11T19:58:27+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0037s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0010s ]
+

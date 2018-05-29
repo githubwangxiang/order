@@ -1,0 +1,53 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+/**
+ * Created by PhpStorm.
+ * User: 二狗
+ * Date: 2017/11/7
+ * Time: 12:30
+ */
+header('content-type:text/html;charset=utf-8');
+class FdorderController extends Controller
+{
+    public function index()
+    {
+        $order_ids=I('get.cart_ids');
+      //获取到的是成为订单的所有物品的id，将他们在购物车的is_order的字段名称改为1
+        $save_data=['is_order'=>1];
+        $order=D('cart')->where("id in ($order_ids)")->save($save_data);
+        if($order==false)
+        {
+            echo "<script>parent.layer.alert('添加订单失败');
+                   var index=parent.layer.getFrameIndex(window.name);
+                    window.parent.location.reload();
+                    parent.layer.close(index);
+                 </script>";
+        }
+        //查询出订单商品，将订单商品进行展示
+        $data=D('cart')->where("is_order")->select();
+        $order_data=D('cart')->show_cart($data);
+        //分配商品的数据
+        $this->assign('foods',$order_data['foods']);
+        $this->assign('goods',$order_data['goods']);
+        $this->assign('res',$order_data['res_name']);
+        $this->assign('all_price',$order_data['all_price']);
+        $this->assign('all_grade',$order_data['all_grade']);
+
+
+        //获用户地址的数据
+//从session中获取用户的id
+        $user_id=session('user_info.id');
+        $user_id=1;
+        //查询用户的地址
+        $address_data=D('address')->where("user_id=$user_id")->select();
+
+        //将数据进行分配
+        $this->assign('address_data',$address_data);
+
+        //展示页面
+        $this->display('list');
+
+    }
+
+}

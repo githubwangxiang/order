@@ -1,0 +1,44 @@
+
+<!--Start content-->
+<section class="Psection MT20">
+<nav class="U-nav Font14 FontW">
+  <ul>
+   <li><i></i><a href="javascript:void(0);">用户中心首页</a></li>
+   <li><i></i><a href="__CONTROLLER__/userOrder" id="order">我的订单</a></li>
+   <li><i></i><a href="__CONTROLLER__/userAddre">收货地址</a></li>
+   <li><i></i><a href="user_message.html">我的留言</a></li>
+   <li><i></i><a href="__CONTROLLER__/grade">我的积分</a></li>
+   <li><i></i><a href="user_favorites.html">我的收藏</a></li>
+   <li><i></i><a href="__CONTROLLER__/manege">账户管理</a></li>
+   <li><i></i><a href="__CONTROLLER__/logOut">安全退出</a></li>
+  </ul>
+ </nav>
+ <article class="U-article Overflow">
+  <!--"引用“user_page/user_index.html”"-->
+  <section class="usercenter">
+   <span class="Weltitle Block Font16 CorRed FontW Lineheight35">Welcome欢迎光临！</span>
+   <div class="U-header MT20 Overflow">
+    <img src="{$user.head|default='/Public/Uploads//head/2017-11-07/5a014246d4d36.jpg'}">
+    <p class="Font14 FontW">{$user.user_name}&ensp; 欢迎您回到 用户中心！</p>
+    <p class="Font12">您的上一次登录时间:<time> {$userlast_time|date="Y-m-d",###}</time></p>
+    <p class="Font12 CorRed FontW"> | 我的积分( {$user.grade_num|default=0} )</p>
+   </div>
+    <ul class="s-States Overflow FontW" id="Lbn">
+     <li class="Font14 FontW">幸福业务在线提醒：</li>
+     <li><a href="#">待付款( {$arr.wf|default=0} )</a></li>
+     <li><a href="#">待发货( {$arr.wfh|default=0} )</a></li>
+     <li><a href="#">已收货( {$arr.yfh|default=0})</a></li>
+     <li><a href="#">已收货( {$arr.ysh|default=0})</a></li>
+    </ul>
+  </section>
+ </article>
+</section>
+<!--End content-->
+
+<script>
+ $(function(){
+
+
+ })
+
+</script>

@@ -1,0 +1,30 @@
+
+
+
+
+  <link href="__PUBLIC__/Home/css/sustyle.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+      .nav-cont .nav-extra{background: url(__PUBLIC__/Home/images/extra.png);}
+    </style>
+  <script type="text/javascript" src="__PUBLIC__/Home/js/jquery.min.js"></script>
+
+
+
+
+
+  <div class="take-delivery">
+   <div class="status">
+     <h2>您已成功付款</h2>
+     <div class="successInfo">
+       <ul>
+         <li>付款金额<em>¥{$total}</em></li>
+       </ul>
+       <div class="option">
+         <span class="info">您可以</span>
+          <a href="#" class="J_MakePoint" >进入<span>用户中心</span></a>
+          <a href="./person/orderinfo.html" class="J_MakePoint">返回<span>首页</span></a>
+       </div>
+      </div>
+    </div>
+  </div>
+

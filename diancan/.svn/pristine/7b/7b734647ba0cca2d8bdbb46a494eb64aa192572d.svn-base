@@ -1,0 +1,20 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class GoodsController extends Controller{
+    //积分商品列表
+    public function index(){
+        //获取积分商品数据
+        $goods = D('Goods') -> select();
+        $this -> assign('goods',$goods);
+        //获取餐馆数据
+        $restaurant = D('Restaurant') -> select();
+        $this -> assign('restaurant',$restaurant);
+        $this -> display();
+    }
+    //积分商品详情页
+    public function detail(){
+
+        $this -> display();
+    }
+}

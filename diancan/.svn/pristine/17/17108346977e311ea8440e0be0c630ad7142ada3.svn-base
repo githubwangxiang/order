@@ -1,0 +1,148 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class  ResController extends Controller{
+		// 订单页
+	public function index(){
+		if(IS_POST){
+				$price_l=I('post.pri_l');
+				$price_h=I('post.pri_h');
+				$price=D('Restaurant')->where("res_price<$price_h and res_price>$price_l")->select();
+				// dump($price);die;
+				if($price){
+					$return=[
+						'code'=>10000,
+						'data'=>$price
+					];
+				
+				}else{
+					$return=[
+						'code'=>10001,
+						'msg'=>'没有20元以下的'
+					];
+				}
+				$this->ajaxRerurn($return);
+		}else{
+			// 查询所有分类
+			$cate = D('cate') -> select();
+			// dump($cate);die;
+			$this ->assign('cate',$cate);
+			// 取指定分类下的商品
+			$cate_3 = D('cate') -> where(['id' => 3]) ->find();
+			$this -> assign('cate_3',$cate_3);
+			// 取分类下的商品信息
+	        $rest =D('restaurant') -> limit(0,4)-> select();
+	        // dump($rest);die;
+	        $this -> assign('rest',$rest);
+	        // dump($rest);die;
+			// 定义title页面
+			$this -> assign('title','首页');
+			// 推荐商家
+			$art = D('Restaurant');
+			// dump($art);
+			// die;
+			$this -> assign ('mend',$art -> get5());
+			// 以下是翻页
+			$model = D('Restaurant');
+            //查询总记录数
+		    $total = $model -> count();
+		    //每页显示条数
+		    $pagesize = 2;
+		    //实例化Page类
+		    $page = new \Think\Page($total, $pagesize);
+		    //修改分页栏显示定制数组
+		    $page -> setConfig('prev', '上一页');
+		    $page -> setConfig('next', '下一页');
+		    $page -> setConfig('first', '首页');
+		    $page -> setConfig('last', '尾页');
+		    $page -> setConfig('theme', '%HEADER% %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
+		    //设置分页类的属性
+		    $page -> rollPage = 4;
+		    $page -> lastSuffix = false;
+		    //获取分页栏的html代码 使用show方法
+		    $page_html = $page -> show();
+		    $this -> assign('page_html', $page_html);
+		    //查询当前页数据
+		    $data = $model -> limit($page -> firstRow, $page -> listRows) -> select();
+		    //变量赋值
+		    $this -> assign('data', $data);
+			$this -> display();
+		}
+	} 
+	// 商品详情页
+	public function detail(){
+		// 接收id参数
+		$id = I('get.id',0,'intval');
+		// dump($id);die;
+    	// 查询商品表
+    	$rest = D('Restaurant') -> where(['id' => $id]) -> find();
+    	$this -> assign('rest',$rest);
+
+
+    			// 以下是翻页
+		$model = D('Restaurant');
+            //查询总记录数
+		    $total = $model -> count();
+		    //每页显示条数
+		    $pagesize = 2;
+		    //实例化Page类
+		    $page = new \Think\Page($total, $pagesize);
+		    //修改分页栏显示定制数组
+		    $page -> setConfig('prev', '上一页');
+		    $page -> setConfig('next', '下一页');
+		    $page -> setConfig('first', '首页');
+		    $page -> setConfig('last', '尾页');
+		    $page -> setConfig('theme', '%HEADER% %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
+		    //设置分页类的属性
+		    $page -> rollPage = 4;
+		    $page -> lastSuffix = false;
+		    //获取分页栏的html代码 使用show方法
+		    $page_html = $page -> show();
+		    $this -> assign('page_html', $page_html);
+		    //查询当前页数据
+		    $data = $model -> limit($page -> firstRow, $page -> listRows) -> select();
+		    //变量赋值
+		    $this -> assign('data', $data);
+		    // 调用food表
+		    $food = D('Food') ->limit(0,4)-> select();
+		    $this -> assign('food',$food);
+		$this -> display();
+	}
+
+	// 菜品详情页
+	public function detailsp(){
+		/*$data = D('food') -> select();
+		$this -> assign('data',$data);*/
+			// 接收id参数
+		$id = I('get.id');
+		 // dump($id);die;
+		$food = D('Food') -> where(['id' => $id]) -> find();
+		$this -> assign('food',$food);
+		// 方法
+         $art = D('Food');
+         // dump($art);die;
+		$this -> assign ('mend',$art -> der3());
+		$this -> display();
+	}
+	// 加入购物方法
+	public function addcart() {
+	 //处理表单提交
+        if(IS_POST){
+            //post方式提交表单
+            $data = I('post.');
+            if(!$data['food_id'] || $data['is_food'] || !$data['num']){
+                echo  "<script>alert('参数异常');</script>";
+            }
+            $res = D('Cart') ->addCart($data['food_id'],$data['is_food'],$data['num']);
+            if($res){
+                $this->redirect('Home/Cart/index');
+            }else{
+                echo  "<script>alert('服务器异常');</script>";
+            }
+        }else{
+            $this->redirect('Home/Index/index');
+        }
+    }
+}
+
+?>

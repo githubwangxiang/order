@@ -1,0 +1,47 @@
+
+<section class="Psection MT20">
+ <article class="Searchlist Overflow">
+  <ul class="Overflow">
+   <volist name="res" id="vol">
+    <li>
+    <a href="__MODULE__/Res/detail/id/{$vol.id}" target="_blank" title="{$vol.res_name}"><img src="{$vol.res_logo}"></a>
+    <p class="P-shop Overflow">
+        <span class="sa"><a href="__MODULE__/Res/detail/id/{$vol.id}" target="_blank" title="{$vol.res_name}">{$vol.res_name}</a></span>
+        <span class="sp">{$vol.res_city}</span></p>
+    <p class="P-shop Overflow">{$vol.res_city}.{$vol.res_address}</p>
+    </li>
+   </volist>
+  </ul>
+  <div class="TurnPage">
+  <a href="#">
+  <span class="Prev"><i></i>首页</span>
+  </a>
+  <a href="#"><span class="PNumber">1</span></a>
+  <a href="#"><span class="PNumber">2</span></a>
+  <a href="#">
+  <span class="Next">最后一页<i></i></span>
+  </a>
+ </div>
+ </article>
+ <aside class="Sraside">
+  <div class="bestshop">
+  <span class="Bpt Block FontW Font14">推荐店铺</span>
+  <ul>
+      <volist name="tj" id="vol">
+           <li>
+            <a href="__MODULE__/Res/detail/id/{$vol.id}" title="{$vol.res_name}" target="_blank"><img src="{$vol.res_logo}"></a>
+            <p>
+             <span class="Block FontW Font14">
+                 <a href="__MODULE__/Res/detail/id/{$vol.id}" title="{$vol.res_name}" target="_blank" class="CorRed">{$vol.res_name}</a>
+             </span>
+             <span class="Block Overflow">{$vol.res_city}</span>
+             <span class="Block Overflow">{$vol.res_city}.{$vol.res_area}{$vol.res_address}</span>
+            </p>
+           </li>
+      </volist>
+  </ul>
+  </div>
+  <!--广告位或其他推荐版块-->
+  <img src="__PUBLIC__/Home/upload/ggw.jpg">
+ </aside>
+</section>

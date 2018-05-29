@@ -1,0 +1,92 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class UserController extends Controller{
+	//注册
+	public function register(){
+		//两个逻辑
+		if(IS_POST){
+			//表单提交
+			$data = I('post.');
+			$model = D('User');
+			if(!$model->create($data)){
+				//发生错误
+				$error = $model->getError();
+				$this->error($error);
+			}
+			//添加数据到数据表
+			$res = $model->add();
+			if($res){
+				//注册成功
+				$this->success('注册成功',U('Home/User/login'));
+			}else{
+				//注册失败
+				$this->error('注册失败');
+			}
+		}else{
+			//临时关闭模板布局
+			layout(false);
+			$this->display();
+		}	
+	}
+
+	//ajax异步判断用户名是否可用
+	public function checkname(){
+		//接收参数
+		$username = I('post.username');
+		//查询数据库看用户名是否已经被注册
+		$res = D('User')->where(['user_name'=>$username])->find();
+
+		if($res){
+			//用户名已经存在,不能使用
+			$return = array(
+				'code'=>10001,
+				'msg'=>'用户名已经存在'
+			);
+			$this->ajaxReturn($return);
+		}else{
+			//用户名可以使用
+			$return = array(
+				'code'=>10000,
+				'msg'=>'用户名可以使用'
+			);
+			$this->ajaxReturn($return);
+		}
+	}
+
+	//登录
+	public function login(){
+		//两个逻辑
+		if(IS_POST){
+			//表单提交
+			$data = I('post.');
+			//根据用户名查询用户表
+			$user = D('User')->where("email ='{$data['username']}' 
+				and phone = '{$data['username']}'")->find();
+			if($user && $user['password'] == encrypt_password($data['password'])){
+				//登录成功,设置登录标识
+				session('user_info',$user);
+				$id=$user['id'];
+				$last_time = array('last_time'=>time());
+				D('User')->where(['id'=>$id])->save($last_time);
+				$this->success("登录成功",U("Home/Index/index"));
+			}else{
+				//登录失败
+				$this->error("用户名或密码错误");
+			}
+		}else{
+			//关闭模板布局
+			layout(false);
+			$this->display();
+		}
+	}
+
+	//退出
+	public function logout(){
+		//清空session中的登录标识
+		session(null);
+		//跳转到首页
+		$this->redirect('Home/Index/index');
+	}
+}
+?>

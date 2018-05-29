@@ -1,0 +1,256 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+/**
+ * Created by PhpStorm.
+ * User: 二狗
+ * Date: 2017/11/5
+ * Time: 9:42
+ */
+header('content-type:text/html;charset=utf-8');
+class AuthController extends Controller
+{
+ //************************************显示权限列表
+public function index()
+   {
+       //获取所有的权限的数据
+       $auths=D('auth')->select();
+       //对数据进行递归
+       $auths=recursion($pid=0,$auths);
+       //将数据进行分配
+       $this->assign('auths',$auths);
+       $this->display('list');
+   }
+//**************************************添加权限
+ public function add()
+ {
+     if(IS_POST)
+     {
+        //对数据进行判断
+         $lev=I('post.lev');
+         $auth_name=I('post.role');
+         $auth_c=I('post.authc');
+         $auth_a=I('post.autha');
+//判断文件是否重名
+         $auth_name_res=D('auth')->where(["auth_name"=>$auth_name])->find();
+              if($auth_name_res)
+              {
+                  //重名
+                  $return=[
+                      'code'=>1001,
+                      'message'=>'error',
+                      'info'=>'权限名已经存在',
+                      'a'=>I('post.'),
+                  ];
+                  //返回ajax请求
+                  $this->ajaxReturn($return);
+              }else
+              {
+                  if($lev==0)
+                  {
+                      //对权限进行添加,组合需要的数据
+                      $data=[
+                          'auth_name'=>$auth_name,
+                          'pid'=>$lev
+                      ];
+                  }else
+                  {
+                      //对权限进行添加,组合需要的数据
+                      $data=[
+                          'auth_name'=>$auth_name,
+                          'auth_c'=>$auth_c,
+                          'auth_a'=>$auth_a,
+                          'pid'=>$lev
+                      ];
+                  }
+
+                  //进行添加
+                  $add_res=D('auth')->add($data);
+                  if($add_res!==false)
+                  {
+                      //添加成功
+                      $return=[
+                          'code'=>1000,
+                          'message'=>'success',
+                          'info'=>'添加成功'
+                      ];
+                      //返回ajax请求
+                      $this->ajaxReturn($return);
+                  }else
+                  {
+                      //添加失败
+                      $return=[
+                          'code'=>1002,
+                          'message'=>'error',
+                          'info'=>'添加失败'
+                      ];
+                      //返回ajax请求
+                      $this->ajaxReturn($return);
+                  }
+              }
+
+     }else
+     {
+         //显示权限，只显示顶级权限
+         $first_auth=D('auth')->where(['pid'=>0])->select();
+         //将数据进行展示
+         $this->assign('first_auth',$first_auth);
+         $this->display('add');
+     }
+
+ }
+//*************************************权限的编辑
+public function detail()
+{
+    if(IS_POST)
+    {
+     // 判断该分类下是否有子分类，否则无法删除
+        $id=I('post.id');
+         $res_find=D('Auth')->where(['pid'=>$id])->find();
+        if($res_find)
+        {
+            //修改失败
+            $return=[
+                'code'=>1002,
+                'message'=>'error',
+                'info'=>'修改失败(存在子类)'
+            ];
+            //返回ajax请求
+            $this->ajaxReturn($return);
+        }else
+        {
+            //获取数据
+            if(I('post.lev')==0)
+            {
+                $data=[
+                    'id'=>I('post.id'),
+                    'auth_name'=>I('post.role'),
+                    'auth_c'=>null,
+                    'auth_a'=>null,
+                    'pid'=>I('post.lev')
+                ];
+            }else
+            {
+                $data=[
+                    'id'=>I('post.id'),
+                    'auth_name'=>I('post.role'),
+                    'auth_c'=>I('post.authc'),
+                    'auth_a'=>I('post.autha'),
+                    'pid'=>I('post.lev')
+                ];
+            }
+            //进行修改
+            $res_save=D('Auth')->where(['id'=>$id])->save($data);
+            //对修改结果进行判断
+            if($res_save!==false)
+            {
+                $return=[
+                    'code'=>1000,
+                    'message'=>'success',
+                    'info'=>'修改成功'
+                ];
+                //返回ajax请求
+                $this->ajaxReturn($return);
+            }else
+            {
+                $return=[
+                    'code'=>1003,
+                    'message'=>'error',
+                    'info'=>'修改失败。。'
+                ];
+                //返回ajax请求
+                $this->ajaxReturn($return);
+            }
+
+        }
+
+
+
+
+
+    }else
+    {
+        //页面的展示
+        // 获取数据
+        $id=I('get.id');
+        //查询该id下的权限数据
+        $auth_data=D('auth')->where(['id'=>$id])->find();
+        //分配权限数据
+        $this->assign('auth',$auth_data);
+        //显示权限，只显示顶级权限
+        $first_auth=D('auth')->where(['pid'=>0])->select();
+        //将数据进行展示
+        $this->assign('first_auth',$first_auth);
+        $this->display('detail');
+    }
+
+
+
+
+
+
+}
+//************************************权限的删除
+public function del()
+{
+//存在子类不可以删除。角色在使用不可以删除
+//获取这个权限的id
+    $id=I('post.id');
+//判断是否存在子类
+    $auth_son=D('auth')->where("pid=$id")->find();
+   if($auth_son)
+   {//存在子类
+       $return=array(
+           'code'=>1003,
+           'msg'=>'存在子类，无法删除'
+       );
+       $this->ajaxReturn($return);
+   }
+
+    //查询是否有这个角色
+    $role_auths=D('role')->field('auth_ids')->select();
+    $num=0;
+   foreach ($role_auths as $value)
+   {
+       $is_role=in_array($id,explode(',',$value['auth_ids']));
+       if($is_role)
+       {
+           $num++;
+       }
+   }
+    if($num>0)
+    {//如果存在，判断是否用管理员使用
+             $return=array(
+                 'code'=>1005,
+                 'msg'=>'有角色正在该权限，删除失败'
+             );
+             $this->ajaxReturn($return);
+
+    }else
+    {//没有角色使用，直接删除
+      $del_res=D('auth')->where("id=$id")->delete();
+      if($del_res!==false)
+      {
+          $return=array(
+              'code'=>1000,
+              'msg'=>'删除OK'
+          );
+          $this->ajaxReturn($return);
+      }else
+      {
+          $return=array(
+              'code'=>1004,
+              'msg'=>'系统异常'
+          );
+          $this->ajaxReturn($return);
+      }
+
+
+
+    }
+
+
+
+
+}
+}

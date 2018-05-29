@@ -1,0 +1,14 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class FoodController extends Controller{
+    public function detail(){
+        $id = I('get.id');
+        $food = D('Food') -> find($id);
+        $this -> assign('food',$food);
+        $goods = D('Goods')  -> limit(0,2) -> select();
+        $this -> assign('goods',$goods);
+        $this -> display();
+    }
+
+}

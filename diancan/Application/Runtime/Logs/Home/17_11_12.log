@@ -1,0 +1,912 @@
+[ 2017-11-12T18:24:53+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001522s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0036s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0012s ]
+
+[ 2017-11-12T18:24:54+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001454s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0054s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0014s ]
+
+[ 2017-11-12T18:24:56+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0065s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0015s ]
+
+[ 2017-11-12T18:25:24+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0063s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0012s ]
+
+[ 2017-11-12T18:25:25+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001673s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0051s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0010s ]
+
+[ 2017-11-12T18:25:27+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001639s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0061s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0011s ]
+
+[ 2017-11-12T18:25:29+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002469s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0060s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0010s ]
+
+[ 2017-11-12T18:25:31+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0050s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0013s ]
+
+[ 2017-11-12T18:26:04+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002123s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0050s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0012s ]
+
+[ 2017-11-12T18:26:07+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0052s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0011s ]
+
+[ 2017-11-12T18:26:09+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0058s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0019s ]
+
+[ 2017-11-12T18:26:21+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0050s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0011s ]
+
+[ 2017-11-12T18:26:54+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001374s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0065s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0013s ]
+
+[ 2017-11-12T18:26:55+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001420s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0058s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0011s ]
+
+[ 2017-11-12T18:26:58+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001243s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0037s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0010s ]
+
+[ 2017-11-12T18:26:59+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002542s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0063s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0014s ]
+
+[ 2017-11-12T18:29:02+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0051s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0010s ]
+
+[ 2017-11-12T18:29:03+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0037s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0010s ]
+
+[ 2017-11-12T18:29:04+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001411s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0049s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0010s ]
+
+[ 2017-11-12T18:29:05+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0074s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0010s ]
+
+[ 2017-11-12T18:29:12+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0061s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0013s ]
+
+[ 2017-11-12T18:29:33+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0067s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0015s ]
+
+[ 2017-11-12T18:29:34+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0056s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0011s ]
+
+[ 2017-11-12T18:30:55+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002239s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0012s ]
+
+[ 2017-11-12T18:30:56+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001432s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0050s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0010s ]
+
+[ 2017-11-12T18:30:57+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0064s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0012s ]
+
+[ 2017-11-12T18:31:12+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0048s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0013s ]
+
+[ 2017-11-12T18:31:57+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001741s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0058s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0012s ]
+
+[ 2017-11-12T18:31:58+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001365s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0045s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0013s ]
+
+[ 2017-11-12T18:32:01+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0051s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0010s ]
+
+[ 2017-11-12T18:36:18+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001699s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0052s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0010s ]
+
+[ 2017-11-12T18:36:19+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001822s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0054s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0011s ]
+
+[ 2017-11-12T18:36:20+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001745s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0060s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0011s ]
+
+[ 2017-11-12T18:36:29+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0049s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0010s ]
+
+[ 2017-11-12T18:36:56+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0066s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0013s ]
+
+[ 2017-11-12T18:36:57+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001141s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0053s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0011s ]
+
+[ 2017-11-12T18:37:00+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0054s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0010s ]
+
+[ 2017-11-12T18:37:23+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0062s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0013s ]
+
+[ 2017-11-12T18:37:35+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0052s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price )  [ RunTime:0.0011s ]
+
+[ 2017-11-12T18:39:02+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+
+[ 2017-11-12T18:39:03+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001169s ]
+
+[ 2017-11-12T18:39:05+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+
+[ 2017-11-12T18:43:59+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002342s ]
+NOTIC: [8] Use of undefined constant length - assumed 'length' E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 169 行.
+
+[ 2017-11-12T18:43:59+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001491s ]
+NOTIC: [8] Use of undefined constant length - assumed 'length' E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 169 行.
+
+[ 2017-11-12T18:44:03+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+NOTIC: [8] Use of undefined constant length - assumed 'length' E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 169 行.
+
+[ 2017-11-12T18:46:14+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001678s ]
+
+[ 2017-11-12T18:47:43+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+
+[ 2017-11-12T18:49:33+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+
+[ 2017-11-12T18:55:55+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001482s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0057s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( 30<res_price<80 )  [ RunTime:0.0010s ]
+
+[ 2017-11-12T18:56:25+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001255s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( 30<res_price<80 )  [ RunTime:0.0011s ]
+
+[ 2017-11-12T18:56:26+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001293s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0057s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( 30<res_price<80 )  [ RunTime:0.0011s ]
+
+[ 2017-11-12T18:56:27+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0063s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( 30<res_price<80 )  [ RunTime:0.0012s ]
+
+[ 2017-11-12T18:56:30+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0052s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( 30<res_price<80 )  [ RunTime:0.0010s ]
+
+[ 2017-11-12T18:57:08+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0057s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' )  [ RunTime:0.0007s ]
+
+[ 2017-11-12T18:57:35+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0056s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( 30<t1.res_price<80 )  [ RunTime:0.0011s ]
+
+[ 2017-11-12T18:57:36+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( 30<t1.res_price<80 )  [ RunTime:0.0010s ]
+
+[ 2017-11-12T18:57:38+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0053s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( 30<t1.res_price<80 )  [ RunTime:0.0010s ]
+
+[ 2017-11-12T18:58:17+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( 30<t1.res_price and t1.res_price<80 )  [ RunTime:0.0008s ]
+
+[ 2017-11-12T18:58:18+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0062s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( 30<t1.res_price and t1.res_price<80 )  [ RunTime:0.0012s ]
+
+[ 2017-11-12T18:58:19+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002577s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0053s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( 30<t1.res_price and t1.res_price<80 )  [ RunTime:0.0009s ]
+
+[ 2017-11-12T19:03:18+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001324s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0071s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t1.res_price between 50 and 90 )  [ RunTime:0.0281s ]
+
+[ 2017-11-12T19:03:19+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002308s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0054s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t1.res_price between 50 and 90 )  [ RunTime:0.0006s ]
+
+[ 2017-11-12T19:03:20+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t1.res_price between 50 and 90 )  [ RunTime:0.0007s ]
+
+[ 2017-11-12T19:03:23+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001179s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0054s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t1.res_price between 50 and 90 )  [ RunTime:0.0006s ]
+
+[ 2017-11-12T19:05:11+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0057s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t1.res_price between 50 and 90 )  [ RunTime:0.0006s ]
+
+[ 2017-11-12T19:05:13+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0042s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t1.res_price between 50 and 90 )  [ RunTime:0.0007s ]
+
+[ 2017-11-12T19:05:17+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t1.res_price between 50 and 90 )  [ RunTime:0.0006s ]
+
+[ 2017-11-12T19:06:42+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001428s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0039s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t1.res_price between 50 and 90 )  [ RunTime:0.0008s ]
+
+[ 2017-11-12T19:06:43+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001503s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0252s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t1.res_price between 50 and 90 )  [ RunTime:0.0006s ]
+
+[ 2017-11-12T19:06:50+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001158s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t1.res_price between 50 and 90 )  [ RunTime:0.0006s ]
+
+[ 2017-11-12T19:08:08+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001640s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0052s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price between 50 and 90 )  [ RunTime:0.0006s ]
+
+[ 2017-11-12T19:08:10+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0059s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price between 50 and 90 )  [ RunTime:0.0008s ]
+
+[ 2017-11-12T19:08:14+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0057s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( res_price between 50 and 90 )  [ RunTime:0.0007s ]
+
+[ 2017-11-12T19:14:48+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0057s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between 50 and 90 )  [ RunTime:0.0006s ]
+
+[ 2017-11-12T19:14:49+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001240s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0053s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between 50 and 90 )  [ RunTime:0.0006s ]
+
+[ 2017-11-12T19:14:50+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between 50 and 90 )  [ RunTime:0.0006s ]
+
+[ 2017-11-12T19:14:51+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0059s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between 50 and 90 )  [ RunTime:0.0006s ]
+
+[ 2017-11-12T19:16:05+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0049s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between 40 and 60 )  [ RunTime:0.0005s ]
+
+[ 2017-11-12T19:16:07+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0051s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between 60 and 80 )  [ RunTime:0.0006s ]
+
+[ 2017-11-12T19:16:49+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001376s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0049s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between 40 and 60 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 224 行.
+
+[ 2017-11-12T19:16:50+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0049s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between 60 and 80 )  [ RunTime:0.0006s ]
+
+[ 2017-11-12T19:19:34+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001724s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0066s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='null' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='null' and res_price between  and  ) 
+
+[ 2017-11-12T19:19:35+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001279s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0058s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between  and  ) 
+
+[ 2017-11-12T19:19:37+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0059s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between 40 and 60 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 224 行.
+
+[ 2017-11-12T19:19:50+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0056s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between 60 and 80 )  [ RunTime:0.0006s ]
+
+[ 2017-11-12T19:20:28+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003099s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='null' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='null' and res_price between  and  ) 
+
+[ 2017-11-12T19:20:30+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001399s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0052s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between  and  ) 
+
+[ 2017-11-12T19:20:32+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0038s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between 40 and 60 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 224 行.
+
+[ 2017-11-12T19:20:44+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001261s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0057s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between 60 and 80 )  [ RunTime:0.0006s ]
+
+[ 2017-11-12T19:23:06+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001563s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0060s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='null' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='null' and res_price between  and  ) 
+
+[ 2017-11-12T19:23:07+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001217s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0056s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between  and  ) 
+
+[ 2017-11-12T19:23:18+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001517s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0056s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between 60 and 80 )  [ RunTime:0.0007s ]
+
+[ 2017-11-12T19:36:18+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001640s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0057s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='null' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='null' and res_price between  and  ) 
+
+[ 2017-11-12T19:36:25+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0050s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between  and  ) 
+
+[ 2017-11-12T19:36:26+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001287s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0059s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between 20 and 40 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 224 行.
+
+[ 2017-11-12T19:36:29+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001146s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0054s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between 60 and 80 )  [ RunTime:0.0006s ]
+
+[ 2017-11-12T19:37:52+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001441s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='null' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='null' and res_price between  and  ) 
+
+[ 2017-11-12T19:37:55+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001132s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0064s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京省' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京省' and res_price between  and  ) 
+
+[ 2017-11-12T19:37:56+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001377s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0043s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京省' and res_price between 1 and 20 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 224 行.
+
+[ 2017-11-12T19:38:18+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001759s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0061s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='null' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='null' and res_price between  and  ) 
+
+[ 2017-11-12T19:38:19+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001443s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0049s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京省' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京省' and res_price between  and  ) 
+
+[ 2017-11-12T19:38:20+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001470s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0058s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京省' and res_price between 20 and 40 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 224 行.
+
+[ 2017-11-12T19:38:51+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001541s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0062s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='null' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='null' and res_price between  and  ) 
+
+[ 2017-11-12T19:38:53+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between  and  ) 
+
+[ 2017-11-12T19:38:55+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0056s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between 20 and 40 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 224 行.
+
+[ 2017-11-12T19:38:58+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0055s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京省' and res_price between 40 and 60 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 224 行.
+
+[ 2017-11-12T19:39:08+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001872s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0054s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='null' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='null' and res_price between  and  ) 
+
+[ 2017-11-12T19:39:09+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001216s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0059s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京市' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京市' and res_price between  and  ) 
+
+[ 2017-11-12T19:39:14+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0049s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='null' and t1.res_pro='北京市' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='null' and t1.res_pro='北京市' and res_price between  and  ) 
+
+[ 2017-11-12T19:39:16+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0051s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京市' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='上海烤鸭' and t1.res_pro='北京市' and res_price between  and  ) 
+
+[ 2017-11-12T19:39:55+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001424s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0050s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京市' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京市' and res_price between  and  ) 
+
+[ 2017-11-12T19:40:03+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0054s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京省' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京省' and res_price between  and  ) 
+
+[ 2017-11-12T19:40:05+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0050s ]
+SQL: SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='北京烤鸭' and t1.res_pro='北京省' and res_price between 20 and 40 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: html E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 224 行.
+
+[ 2017-11-12T19:41:03+08:00 ] 127.0.0.1 /index.php/Home/Res/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001494s ]
+NOTIC: [8] Undefined offset: 1 E:\orderspace\order\Application\Home\Controller\ResController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `restaurant` [ RunTime:0.0057s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='null' and t1.res_pro='北京省' and res_price between  and  ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and  )' at line 1
+ [ SQL语句 ] : SELECT * FROM restaurant t1 join cate as t2   WHERE ( t2.cate_name='null' and t1.res_pro='北京省' and res_price between  and  ) 
+
+[ 2017-11-12T19:46:38+08:00 ] 127.0.0.1 /index.php/Home/Res/Home/index:
+ERR: 非法操作:Home
+
+[ 2017-11-12T19:47:02+08:00 ] 127.0.0.1 /index.php/Home/Res/Home/index:
+ERR: 非法操作:Home
+
+[ 2017-11-12T19:47:31+08:00 ] 127.0.0.1 /index.php/Home/Home/index:
+ERR: 无法加载控制器:Home
+
+[ 2017-11-12T19:47:53+08:00 ] 127.0.0.1 /index.php/Home/Home/index:
+ERR: 无法加载控制器:Home
+
+[ 2017-11-12T19:47:59+08:00 ] 127.0.0.1 /index.php/Home/Home/index:
+ERR: 无法加载控制器:Home
+
+[ 2017-11-12T19:48:19+08:00 ] 127.0.0.1 /index.php/Home/Res/index:
+ERR: 非法操作:index:
+
+[ 2017-11-12T19:48:31+08:00 ] 127.0.0.1 /index.php/Home/Res/index:
+ERR: 非法操作:index:
+

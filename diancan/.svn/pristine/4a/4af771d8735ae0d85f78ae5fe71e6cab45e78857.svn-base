@@ -1,0 +1,136 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+class FoodController extends Controller{
+	public function index(){
+		$data = D('Food') -> select();
+        $this -> assign('data',$data);
+		$this -> display();
+	}
+	public function add(){
+        $model = D('Food');
+        if (IS_POST) {
+            $data = I('post.');
+            //调用模型中的upload_logo方法完成文件上传功能
+            $data = $model->upload_logo($_FILES['logo'], $data);
+            if (!$data) {
+                $error = $model->getError();
+                $this->error($error);
+            }
+            if (!$model->create($data)) {
+                $error = $model->getError();
+                $this->error($error);
+            }
+            $res = $model->add();
+            //layer插件实现页面跳转
+            if ($res) {
+                echo "<script>alert('添加成功');
+                var index=parent.layer.getFrameIndex(window.name);
+                window.parent.location.reload();
+                parent.layer.close(index);
+                </script>";
+            } else {
+                echo "<script>alert('添加失败');
+                     var index=parent.layer.getFrameIndex(window.name);
+                     window.parent.location.reload();
+                     parent.layer.close(index);
+                     </script>";
+            }
+        } else {
+            $this->display();
+        }
+     }
+     public function edit(){
+        // 一vs二
+        if (IS_POST) {
+            //表单提交
+            $data = I('post.');
+            // dump($data);die;
+            // 实例化模型
+            $user = D('Food');
+            // 调用模型中封装的upload_logo
+            $data = $user -> upload_logo($_FILES['logo'],$data);
+            // 判断
+            if (!$data) {
+             // 上传过程中出错
+               $error = $user -> getError();
+               $this -> error($error);
+            }
+            // 上传新字段
+            if ($data['is_logo_small']) {
+                // 在保存到新图片之前将旧图片查询到
+               $goods = $user -> where(['id' => $data['id']]) -> find();
+            }
+            // 用create判断错误信息
+            if (!$user -> create($data)) {
+                $error = $user -> getError();
+                $this -> error($error); 
+            }
+            if($_FILES['logo']['error'] != 0){
+                $this->error('商品上传出错');
+            }
+            //修改成功
+           //如果上传了新图片，删除旧logo图片
+            if($data['is_logo_small']){
+           //删除旧图片 使用PHP自带的unlink函数
+            unlink( ROOT_PATH . $goods['is_logo']);
+            unlink( ROOT_PATH . $goods['is_logo_small']);
+            }
+          
+          //继续上传新的相册图片
+          // $files = $_FILES;
+          // unset($files['logo']);
+          // //调用Goods模型的upload_pics方法上传相册图片
+          // $user -> upload_pics($files, $data['id']);
+           //使用create方法这里不用传参数
+          $res = $user -> save();
+         if($res !== false){
+             $this -> success('修改成功', U('Admin/Food/index'));
+         }else{
+            $this -> error('修改失败');
+          }
+     }else{
+            $id = I('get.id');
+            // dump($id);die;
+            $food = D('Food') -> where(['id' => $id]) -> find();
+            $this->assign('food',$food);
+            $this->display();
+
+        }
+    }
+
+     public function del(){
+    //接收id参数
+   $id = I('post.id');
+    //实例化模型，删除数据
+    $res = D('Food') -> where(['id' => $id]) -> delete();
+    // dump($id);die;
+    if($res !== false){
+      //删除成功
+      $this -> success('删除成功', U('Admin/Food/index'));
+    }else{
+      //删除失败
+      $this -> error('删除失败');
+    }
+  }
+  public function delDate(){
+    $data = I('Food');
+    $user = D('post.data');
+    $res = $data ->delete($user);
+    if ($res !== false) {
+      $return = array(
+        'code' =>10000,
+        'msg'  =>'删除成功'
+      );
+      $this -> ajaxReturn($return);
+    }else{
+      $return =array(
+      'code' => 10001,
+      'msg' => '删除失败'
+      );
+      $this -> ajaxReturn($return);
+    }
+  
+  }
+}
+?>

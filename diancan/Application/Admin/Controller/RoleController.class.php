@@ -1,0 +1,239 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+/**
+ * Created by PhpStorm.
+ * User: 二狗
+ * Date: 2017/11/5
+ * Time: 9:25
+ */
+header('content-type:text/html;charset=utf-8');
+class RoleController extends CommonController
+{
+//********************************显示角色列表
+public function index()
+{
+
+    //查询所有的角色
+    $roles=D('role')->select();
+    //获取所有的管理员
+    $managers=D('manager')->field('manager_name,role_id')->select();
+    //分配数据
+    $this->assign('managers',$managers);
+    $this->assign('roles',$roles);
+    $this->display('list');
+}
+//*********************************添加角色
+public function add()
+{
+    if(IS_POST)
+    {
+        $data=I('post.');
+        $name=$data['roleName'];
+        //判断角色是否已经存在
+        $is_role=D('role')->where("role_name='$name'")->find();
+        if($is_role)
+        {
+            //已经存在
+            echo "<script>parent.layer.alert('角色已经存在');
+                   var index=parent.layer.getFrameIndex(window.name);
+                    window.parent.location.reload();
+                    parent.layer.close(index);
+                 </script>";
+        }else
+        {
+            //将所有权限的id组合成数组
+            $ids='';
+            foreach($data['user-Character-0'] as $value)
+            {
+                $ids.=$value.',';
+            }
+            foreach($data['user-Character-1-0'] as $value)
+            {
+                $ids.=$value.',';
+            }
+            //去除最后的','
+            $auth_ids=rtrim($ids,',');
+            //将权限数据拼接起来
+            $values='';
+            foreach($data['user-Character-1-0'] as $value)
+            {
+                $res=D('auth')->where(['id'=>$value])->find();
+                $values.=$res['auth_c'].'-'.$res['auth_a'].',';
+            }
+            //去除最后的','
+            $auth_ac=rtrim($values,',');
+            $res=[
+                'role_name'=>$data['roleName'],
+                'auth_ids'=>$auth_ids,
+                'auth_ac'=>$auth_ac,
+            ];
+
+          $return=D('role')->add($res);
+            //进行数据的添加
+            if($return!==false)
+            {
+                //添加成功
+                echo "<script>parent.layer.alert('添加成功');
+                   var index=parent.layer.getFrameIndex(window.name);
+                    window.parent.location.reload();
+                    parent.layer.close(index);
+                 </script>";
+            }else
+            {
+                //添加失败
+                echo "<script>parent.layer.alert('添加失败');
+                   var index=parent.layer.getFrameIndex(window.name);
+                    window.parent.location.reload();
+                    parent.layer.close(index);
+                 </script>";
+            }
+
+        }
+
+    }else
+    {
+        //获取所有的顶级权限的数据
+        $first_auths=D('auth')->where(['pid'=>0])->select();
+        //获取所有的二级权限数据
+        $second_auths=D('auth')->where('pid!=0')->select();
+        //将数据进行分配
+        $this->assign('first_auths',$first_auths);
+        $this->assign('second_auths',$second_auths);
+        $this->display('add');
+    }
+}
+
+
+//****************************************角色编辑
+public function detail()
+{
+    if(IS_POST)
+    {
+     //数据的编辑
+        $data=I('post.');
+        $id=$data['id'];
+/*        array(5) {
+        ["roleName"] => string(12) "测试角色"
+        ["id"] => string(1) "4"
+        ["user-Character-0"] => array(1) {
+            [0] => string(2) "18"
+  }
+  ["user-Character-1-0"] => array(1) {
+            [0] => string(2) "21"
+  }
+  ["admin-role-save"] => string(0) ""*/
+
+        //将所有权限的id组合成数组
+        $ids='';
+        foreach($data['user-Character-0'] as $value)
+        {
+            $ids.=$value.',';
+        }
+        foreach($data['user-Character-1-0'] as $value)
+        {
+            $ids.=$value.',';
+        }
+        //去除最后的','
+        $auth_ids=rtrim($ids,',');
+        //将权限数据拼接起来
+        $values='';
+        foreach($data['user-Character-1-0'] as $value)
+        {
+            $res=D('auth')->where(['id'=>$value])->find();
+            $values.=$res['auth_c'].'-'.$res['auth_a'].',';
+        }
+        //去除最后的','
+        $auth_ac=rtrim($values,',');
+        $res=[
+            'role_name'=>$data['roleName'],
+            'auth_ids'=>$auth_ids,
+            'auth_ac'=>$auth_ac,
+        ];
+       $return=D('role')->where(['id'=>$id])->save($res);
+       if($return!==false)
+       {
+           //添加成功
+           echo "<script>parent.layer.alert('修改成功');
+                   var index=parent.layer.getFrameIndex(window.name);
+                    window.parent.location.reload();
+                    parent.layer.close(index);
+                 </script>";
+       }else {
+           //添加成功
+           echo "<script>layer.alert('修改失败');
+                   var index=parent.layer.getFrameIndex(window.name);
+                    window.parent.location.reload();
+                    parent.layer.close(index);
+                 </script>";
+       }
+
+    }else
+    {
+        $id=I('get.id');
+        //获取所具有的权限
+        $auths=D('role')->where(['id'=>$id])->find();
+        //获取所有的顶级权限的数据
+        $first_auths=D('auth')->where(['pid'=>0])->select();
+        //获取所有的二级权限数据
+        $second_auths=D('auth')->where('pid!=0')->select();
+        //将数据进行分配
+        $this->assign('first_auths',$first_auths);
+        $this->assign('second_auths',$second_auths);
+        $this->assign('auths',$auths);
+        $this->display('detail');
+    }
+
+
+
+}
+
+//*************************************角色删除
+public function del()
+{
+
+   $id=I('post.id');
+   //进行判断,如果角色正在管理员使用，则无法删除
+    $res=D('manager')->where("role_id=$id")->find();
+    if($res)
+    {
+     //正在被使用
+        $return=array(
+            'code'=>1001,
+            'msg'=>'角色正在被管理员使用，无法删除'
+        );
+        //返回ajax 请求
+        $this->ajaxReturn($return);
+    }else
+    {
+        //进行删除
+        $del_res=D('role')->where("id=$id")->delete();
+        if($del_res!==false)
+        {
+            $return=array(
+                'code'=>1000,
+                'msg'=>'删除成功'
+            );
+            //返回ajax 请求
+            $this->ajaxReturn($return);
+        }else
+        {
+            $return=array(
+                'code'=>1002,
+                'msg'=>'删除失败'
+            );
+            //返回ajax 请求
+            $this->ajaxReturn($return);
+        }
+
+
+
+    }
+
+
+}
+
+
+
+
+}

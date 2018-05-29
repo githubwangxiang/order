@@ -1,0 +1,205 @@
+﻿<include file="Common/_meta" />
+<title>积分商品管理</title>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 食品管理 <span class="c-gray en">&gt;</span> 菜谱列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+	<div class="cl pd-5 bg-1 bk-gray mt-20">
+			<span class="l">
+				<a href="javascript:;" onclick="dataDel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
+					<a class="btn btn-primary radius" onclick="picture_add('添加产品','__CONTROLLER__/add.html')" href="javascript:;">
+						<i class="Hui-iconfont">&#xe600;</i> 添加菜品</a></span>
+		<span class="r">共有数据：<strong>{$count}</strong> 条</span> </div>
+		<table class="table table-border table-bordered table-bg table-hover table-sort">
+			<thead>
+			<tr class="text-c">
+				<th width="50"><input name="data" type="checkbox" value=""></th>
+				<th width="70">菜品ID</th>
+				<th width="70">商家ID</th>
+				<th width="100">菜品缩略图</th>
+				<th width="100">菜名</th>
+				<th width="100">单价</th>
+				<th width="100">销量</th>
+				<th width="100">操作</th>
+			</tr>
+			</thead>
+			<tbody>
+			<volist name="data" id="vol">
+				<tr class="text-c va-m">
+					<td><input name="id"  type="checkbox" value="{$vol.id}"></td>
+					<td>{$vol.id}</td>
+					<td>{$vol.res_name}</td>
+					<td>
+						<img width="60" class="product-thumb" src="{$vol.is_logo_small}">
+					</td>
+
+					<td class="text-l"><b class="text-success">{$vol.food_name}</b></a>
+					</td>
+					<td><span class="price">{$vol.food_nowprice}</span>元</td>
+					<td>{$vol.food_sale}</td>
+					<td class="td-manage">
+						<!--<a style="text-decoration:none" onClick="product_stop(this,'10001')" href="javascript:;" title="下架">
+							<i class="Hui-iconfont">&#xe6de;</i></a>-->
+						<a style="text-decoration:none" class="ml-5" onClick="picture_edit('产品编辑','__CONTROLLER__/edit/id/{$vol.id}')" href="javascript:;" title="编辑">
+							<i class="Hui-iconfont">&#xe6df;</i></a>
+						<a style="text-decoration:none" class="ml-5" onClick="product_del(this,'{$vol.id}')" href="javascript:;" title="删除">
+							<i class="Hui-iconfont">&#xe6e2;</i>
+						</a>
+					</td>
+				</tr>
+			</volist>
+			</tbody>
+		</table>
+	</div>
+</div>
+<!--_footer 作为公共模版分离出去-->
+<include file="Common/_footer"  />
+<!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/zTree/v3/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript">
+    /*无刷新分页*/
+    $(function(){
+        $('table').dataTable({
+            "aLengthMenu":[[5,10,15,30,-1],["5","10","15","30","ALL"]]//二组数组，第一组数量，第二组说明文字;
+        });
+    });
+    var setting = {
+        view: {
+            dblClickExpand: false,
+            showLine: false,
+            selectedMulti: false
+        },
+        data: {
+            simpleData: {
+                enable:true,
+                idKey: "id",
+                pIdKey: "pId",
+                rootPId: ""
+            }
+        },
+        callback: {
+            beforeClick: function(treeId, treeNode) {
+                var zTree = $.fn.zTree.getZTreeObj("tree");
+                if (treeNode.isParent) {
+                    zTree.expandNode(treeNode);
+                    return false;
+                } else {
+                    //demoIframe.attr("src",treeNode.file + ".html");
+                    return true;
+                }
+            }
+        }
+    };
+
+
+
+    $(document).ready(function(){
+        var t = $("#treeDemo");
+        t = $.fn.zTree.init(t, setting);
+        //demoIframe = $("#testIframe");
+        //demoIframe.on("load", loadReady);
+        var zTree = $.fn.zTree.getZTreeObj("tree");
+        //zTree.selectNode(zTree.getNodeByParam("id",'11'));
+    });
+
+    // $('.table-sort').dataTable({
+    // 	"aaSorting": [[ 1, "desc" ]],//默认第几个排序
+    // 	"bStateSave": true,//状态保存
+    // 	"aoColumnDefs": [
+    // 	  {"orderable":false,"aTargets":[0,7]}// 制定列不参与排序
+    // 	]
+    // });
+
+    /*图片-添加*/
+    function picture_add(title,url){
+        var index = layer.open({
+            type: 2,
+            title: title,
+            content: url
+        });
+        layer.full(index);
+        /*location.href=url;*/
+    }
+
+    /*图片-查看*/
+    function picture_show(title,url,id){
+        var index = layer.open({
+            type: 2,
+            title: title,
+            content: url
+        });
+        layer.full(index);
+    }
+
+
+    /*图片-编辑*/
+    function picture_edit(title,url,id){
+        var index = layer.open({
+            type: 2,
+            title: title,
+            content: url
+        });
+        layer.full(index);
+    }
+
+    /*产品-删除*/
+    function product_del(obj,id){
+        layer.confirm('确认要删除吗？',function(index){
+            $.ajax({
+                type: 'POST',
+                url: '__CONTROLLER__/del',
+                dataType: 'json',
+                data:'id='+id,
+                success: function(data){
+                    $(obj).parents("tr").remove();
+                    layer.msg('已删除!',{icon:1,time:1000});
+                },
+                error:function(data) {
+                    console.log(data.msg);
+                },
+            });
+        });
+    }
+    /*批量删除*/
+    function dataDel(){
+        //获取所有选中的复选框
+        var obj=$('input[type=checkbox][name=id]:checked');
+        var data=[];
+        //得到所有的要删除的id的值
+        for(var i=0;i<obj.length;i++) {
+            data[i]=$(obj[i]).val();
+        }
+        //判断是否有可删除的数据
+        if(data.length==0)
+            layer.alert('请选择数据');
+        else{
+            layer.confirm('确认要删除选中的吗？',function(index){
+            //发送ajax请求
+            $.ajax({
+                'url':'__CONTROLLER__/delData',
+                'data':'data='+data,
+                'type':'post',
+                'dataType':'json',
+                'success':function(response){
+                    if(response.code==10000)
+                    {
+                        //删除成功，从页面上移除
+                        for(var j=0;j<obj.length;j++)
+                        {
+                            $(obj[j]).parent().parent().remove();
+                        }
+                        layer.msg(response.msg,{icon:1,time:1000});
+                    }
+                    else
+                        layer.msg(response.msg,{icon:1,time:1000});
+                }
+            });})
+        }
+    }
+</script>
+

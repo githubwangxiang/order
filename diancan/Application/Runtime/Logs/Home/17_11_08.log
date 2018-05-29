@@ -1,0 +1,114 @@
+[ 2017-11-08T18:40:44+08:00 ] 127.0.0.1 /
+ERR: SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+
+[ 2017-11-08T18:41:09+08:00 ] 127.0.0.1 /
+ERR: SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+
+[ 2017-11-08T18:41:34+08:00 ] 127.0.0.1 /index.php/Home/Index/foodcity
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001549s ]
+
+[ 2017-11-08T18:41:41+08:00 ] 127.0.0.1 /index.php/Home/Index/foodcity
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001431s ]
+
+[ 2017-11-08T18:42:22+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+ERR: 闈炴硶鎿嶄綔:restocart
+
+[ 2017-11-08T18:42:30+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+ERR: 闈炴硶鎿嶄綔:restocart
+
+[ 2017-11-08T19:01:29+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+ERR: 闈炴硶鎿嶄綔:restocart
+
+[ 2017-11-08T19:01:29+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+ERR: 闈炴硶鎿嶄綔:restocart
+
+[ 2017-11-08T19:01:30+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+ERR: 闈炴硶鎿嶄綔:restocart
+
+[ 2017-11-08T19:01:48+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+ERR: 闈炴硶鎿嶄綔:restocart
+
+[ 2017-11-08T19:02:41+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001443s ]
+ERR: 闈炴硶鎿嶄綔:restocart
+
+[ 2017-11-08T19:02:42+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001434s ]
+ERR: 闈炴硶鎿嶄綔:restocart
+
+[ 2017-11-08T19:02:42+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001599s ]
+ERR: 闈炴硶鎿嶄綔:restocart
+
+[ 2017-11-08T19:02:42+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001440s ]
+ERR: 闈炴硶鎿嶄綔:restocart
+
+[ 2017-11-08T19:02:42+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001520s ]
+ERR: 闈炴硶鎿嶄綔:restocart
+
+[ 2017-11-08T19:06:57+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001450s ]
+
+[ 2017-11-08T19:06:58+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001549s ]
+
+[ 2017-11-08T19:06:58+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001377s ]
+
+[ 2017-11-08T19:06:58+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+
+[ 2017-11-08T19:06:59+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
+
+[ 2017-11-08T19:07:06+08:00 ] 127.0.0.1 /index.php/Home/Res/restocart
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001237s ]
+

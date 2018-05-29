@@ -1,0 +1,30 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+/**
+ * Created by PhpStorm.
+ * User: 二狗
+ * Date: 2017/11/6
+ * Time: 13:42
+ */
+header('content-type:text/html;charset=utf-8');
+
+class CartController extends Controller
+{
+//展示购物车
+public function index()
+{
+  $this->display('list');
+
+}
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,241 @@
+<!--Start content-->
+<section class="Psection">
+ <section class="fslist_navtree">
+  <ul class="select">
+		<li class="select-list">
+			<dl id="select1">
+				<dt>分类：</dt>
+				<dd class="select-all selected"><a href="__MODULE__/Res/index">全部</a></dd>
+        <volist name="cate" id="vol">
+              <if condition=" $vol.pid != 0 " >
+              <dd><a href="javascript:" class="deet" onclick="resdeet(this)">{$vol.cate_name}</a></dd>
+              </if>
+        </volist>
+			</dl>
+		</li>
+      <li class="select-list">
+      <dl id="select1">
+        <dt>位置：</dt>
+        <dd class="select-all selected"><a href="__MODULE__/Res/index">全部</a></dd>
+        <volist name="cate" id="vol">
+              <if condition=" $vol.pid != 0 " >
+        <dd><a href="javascript:">{$vol.res_pro}</a></dd>
+          </if>
+        </volist>
+      </dl>
+    </li>
+        <li class="select-list">
+			<dl id="select4">
+				<dt>价位区间：</dt>
+				        <dd class="select-all selected"><a href="__MODULE__/Res/index">全部</a></dd>
+				        <dd><a href="javascript:"  name="jiawei">1-20元</a></dd>
+                <dd><a href="javascript:"  name="jiawei">20-40元</a></dd>
+                <dd><a href="javascript:"  name="jiawei">40-60元</a></dd>
+                <dd><a href="javascript:"  name="jiawei">60-80元</a></dd>
+                <dd><a href="javascript:"  name="jiawei">80-100元</a></dd>
+
+			</dl>
+		</li>
+		<li class="select-result">
+			<dl>
+
+			 <dd class="select-no">已选择：</dd>
+			</dl>
+		</li>
+	</ul>
+ </section>
+<section class="Fslmenu">
+ <a href="#" title="默认排序">
+  <span>
+  <span>默认排序</span>
+  <span></span>
+  </span>
+ </a>
+ <a href="#" title="评价">
+  <span>
+  <span>评价</span>
+  <span class="s-up"></span>
+  </span>
+ </a>
+ <a href="#" title="销量">
+  <span>
+  <span>销量</span>
+  <span class="s-up"></span>
+  </span>
+ </a>
+ <a href="#" title="价格排序">
+  <span>
+  <span>价格</span>
+  <span class="s-down"></span>
+  </span>
+ </a>
+ <a href="#" title="发布时间排序">
+  <span>
+  <span>发布时间</span>
+  <span class="s-up"></span>
+  </span>
+ </a>
+</section>
+<section class="Fsl">
+ <ul id='sel'>
+  <volist name="rest" id="vol">
+  <li>
+   <a href="detail/id/{$vol.id}" target="_blank" title="调用产品名/店铺名"><img src="{$vol.res_logo}"></a>
+   
+   <h3>{$vol.res_name}</h3>
+   <h4></h4>
+
+   <p>菜系：tgy6g</p> 
+   <p>地址：{$vol.res_pro}{$vol.res_city}{$vol.res_area}{$vol.res_address}</p>
+   <p>人均：{$vol.res_price}</p>
+   <p>
+    <span class="DSBUTTON"><a href="__CONTROLLER__/detail/id/{$vol.id}" target="_blank" class="Fontfff">点外卖</a></span>
+   </p>
+   </li>
+   </volist>
+ </ul>
+ <aside>
+  <div class="title">热门商家</div>
+  <div class="C-list">
+    <volist  name="rest" id="vol">
+   <a href="__CONTROLLER__/detail/id/{$vol.id}" target="_blank" title="店铺名称">
+    <img src="{$vol.res_logo}" width="290px" height="127px"></a>
+   <p><a href="__CONTROLLER__/detail/id/{$vol.id}" target="_blank">{$vol.res_name}</a></p>
+   <p>
+   <span>人均：{$vol.res_price}元</span>
+   </p>
+   </volist>
+  </div>
+ </aside>
+<!-- <div class="TurnPage">
+  <a href="#">
+  <span class="Prev"><i></i>首页</span>
+  </a>
+  <a href="#"><span class="PNumber">1</span></a>
+  <a href="#"><span class="PNumber">2</span></a>
+  <a href="#">
+  <span class="Next">最后一页<i></i></span>
+  </a>
+ </div> -->
+</section>
+</section>
+<script type="text/javascript">
+ //  数据筛选
+ //   function resdeet(e){
+ //        //获取选中的数字
+ //        var data = $(e).html();
+ //        //去掉尾部字
+ //        data = data.replace('元', '');
+ //        //根据'-'分割  得到(1,100)(101,200)...等数据 数组形式
+ //        data = data.split('-');
+ //        ///如果数组的0下标的值是全部
+ //        //需要进行转码，ajax不允许传中文参数
+ //        if (data[0] == "全部") {
+ //            data[0] = encodeURI(data[0]);
+ //   }
+ //   $.ajax({
+ //    type:'post',
+ //    url:'__CONTROLLER__/restdeet',
+ //    datatype:'josn',
+ //    data: 'jf1=' + data[0] + '&jf2=' + data[1],
+ //    success:function(response){
+ //        //替换了上面ul  id为getgrade的下面html内容
+ //                $('#sel').html(response.resdeets);
+ //    },
+ //   });
+ // }
+
+// 给每个标签添加点击
+$('a[name=fenlei]').click(function() {
+    //获取到用户点击后筛选得参数
+    //获取当前点击的按钮的值
+    var fenlei=$(this).html();
+    // 在获取dd标签里地址的值
+    var dizhi=$('#selectB').find('a[name=dizhi]').html();
+    var dizhi=$('#selectB').find('a[name=dizhi]').html();
+    // alert(fenlei+dizhi);
+  if(fenlei==null||jiawei==null||dizhi==null)
+  {
+     alert('请选择准确分类！');
+     return false;
+  }
+
+    //发送ajax请求
+    $.ajax({
+      'url':'__CONTROLLER__/select',
+      'data':'fenlei='+fenlei+'&dizhi='+dizhi,
+      'type':'post',
+      'datatype':'json',
+      'success':function(res){
+             $('#sel').html(res.session);
+      }
+    })
+});
+
+//给每个标签添加点击
+$('a[name=dizhi]').click(function() {
+  // alert(1);
+    //获取到用户点击后筛选得参数
+    //获取分类
+    // var fenlei=$('#selectA').find('a[name=select]').html();
+    // alert(fenlei);
+    //获取当前点击的按钮的值
+    var dizhi=$(this).html();
+    //在获取dd标签里地址的值
+    var fenlei=$('#selectA').find('a[name=fenlei]').html();
+    // alert(fenlei+dizhi);
+
+
+  if(fenlei==null||jiawei==null||dizhi==null)
+  {
+     alert('请选择准确分类！');
+     return false;
+  }
+
+     //发送ajax请求
+    $.ajax({
+      'url':'__CONTROLLER__/select',
+      'data':'fenlei='+fenlei+'&dizhi='+dizhi,
+      'type':'post',
+      'datatype':'json',
+      'success':function(res){
+             $('#sel').html(res.session);
+      }
+    })
+   
+});
+
+//给每个标签添加点击
+$('a[name=jiawei]').click(function() {
+  // alert(1);
+    //获取到用户点击后筛选得参数
+    //获取分类
+    var fenlei=$('#selectA').find('a[name=fenlei]').html();
+    // alert(fenlei);
+    //获取当前点击的按钮的值
+    var jiawei=$(this).html();
+    //在获取dd标签里地址的值
+    var dizhi=$('#selectB').find('a[name=dizhi]').html();
+    // var dizhi=$('#selectB').find('a[name=dizhi]').html();
+
+  if(fenlei==null||jiawei==null||dizhi==null)
+  {
+     alert('请选择准确分类！');
+     return false;
+  }
+
+
+    $.ajax({
+      'url':'__CONTROLLER__/select',
+      'data':'fenlei='+fenlei+'&dizhi='+dizhi+'&jiawei='+jiawei,
+      'type':'post',
+      'datatype':'json',
+      'success':function(res){
+        console.log(res.session);
+             $('#sel').html(res.session);
+      
+      }
+    })
+   
+});
+ </script>

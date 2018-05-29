@@ -1,0 +1,138 @@
+
+<!--Start content-->
+<section class="Psection MT20">
+<nav class="U-nav Font14 FontW">
+  <ul>
+      <li><i></i><a href="__CONTROLLER__/index">用户中心首页</a></li>
+      <li><i></i><a href="__CONTROLLER__/userOrder" id="order">我的订单</a></li>
+      <li><i></i><a href="__CONTROLLER__/userAddre">收货地址</a></li>
+      <li><i></i><a href="__CONTROLLER__/grade">我的积分</a></li>
+      <li><i></i><a href="__CONTROLLER__/manege">账户管理</a></li>
+      <li><i></i><a href="__CONTROLLER__/logOut">安全退出</a></li>
+  </ul>
+ </nav>
+ <article class="U-article Overflow">
+  <!--user Account-->
+  <section class="AccManage Overflow">
+   <span class="AMTitle Block Font14 FontW Lineheight35"  >账户管理 |  &ensp; <a id="info" style="color:blue;cursor: pointer;" >修改个人信息</a></span>
+
+   <p>登陆邮箱： {$Think.session.user_info.email}</p>
+   <p>手机号码：{$Think.session.user_info.user_phone|encrypt_phone=###} </p>
+   <p>上次登陆：{$Think.session.user_info.last_time|date='Y-m-d',###}( *如非本人登陆，请立即<a href="javascript:void(0);" id="up">修改您的密码</a>！ )</p>
+   <form style="display: none" id="for">
+      <table>
+       <tr>
+          <td width="30%" align="right">原始密码：</td>
+          <td><input type="password"  id='ypass' value=""></td>
+       </tr>
+      <tr>
+       <td width="30%" align="right">修改密码：</td>
+       <td><input type="password"  id="xpass" value=""></td>
+      </tr>
+      <tr>
+       <td width="30%" align="right">确认密码：</td>
+       <td><input type="password" name="password" id="qpass" value=""></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td><input type="button" id="bt" value="提交"></td>
+      </tr>
+      </table>
+    </form>
+     <form style="display: none"  action="__CONTROLLER__/userInfo" id="infoform"  method="post" enctype="multipart/form-data">
+      <table>
+         <tr>
+            <td width="30%" align="right">*昵称：</td>
+            <td><input type="text" name="user_name" value="{$Think.session.user_info.user_name}"></td>
+         </tr>
+         <tr>
+            <td width="30%" align="right">*头像：</td>
+            <td><input type="file" name="header"> </td>
+         </tr>
+         <tr>
+           <td width="30%" align="right"></td>
+           <td><input type="button" id='infobt' value="提交"></td>
+         </tr>
+    </table>
+   </form>
+  </section>
+ </article>
+</section>
+<!--引入webuploader相关外部文件-->
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/lib/webuploader-0.1.5/webuploader.css">
+<script type="text/javascript" src="__PUBLIC__/Home/lib/webuploader-0.1.5/webuploader.js"></script>
+<script>
+
+    $(function(){
+      //给修改密码添加点击时间
+      $('#up').click(function(){
+          $('#infoform').css('display','none');
+          $('#for').css('display','block');
+      });
+      $('#bt').click(function(){
+          //获取值
+          var ypass=$('#ypass').val();
+          var xpass=$('#xpass').val();
+          var qpass=$('#qpass').val();
+          if(xpass!==qpass)
+          {
+              alert('两次密码不一致');
+              return;
+          }
+          var mm={'ypass':ypass,'xpass':xpass,'qpass':qpass};
+          $.ajax({
+              'url':'__CONTROLLER__/editPass',
+              'type':'post',
+              'dataType':'json',
+              'data':mm,
+              'success':function(re){
+                  if(re.code!=10000)
+                  {
+                      alert(re.msg);
+                  }
+                  else
+                  {
+                      //修改成功
+                      alert('修改成功');
+                      location.href='__CONTROLLER__/index';
+                  }
+              }
+
+          })
+
+      });
+      $('#info').click(function(){
+          $('#for').css('display','none');
+          $('#infoform').css('display','block');
+      });
+     $('#infobt').click(function(){
+         $user_name=$('input[name=user_name]').val();
+         if($user_name=='')
+         {
+             alert('请输入昵称');return;
+         }
+         else
+         {
+             $('#infoform').submit();
+         }
+
+      });
+
+
+
+
+
+
+
+
+
+
+  })
+
+
+
+
+
+
+</script>
+<!--End content-->

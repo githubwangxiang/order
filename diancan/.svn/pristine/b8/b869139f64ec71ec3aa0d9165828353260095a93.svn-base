@@ -1,0 +1,210 @@
+
+<!--Start content-->
+<section class="Cfn">
+ <aside class="C-left">
+  <div class="S-time">服务时间：周一~周六<time>09:00</time>-<time>23:00</time></div>
+  <div class="C-time">
+   <img src="__PUBLIC__/Home/upload/dc.jpg"/>
+  </div>
+  <a href="list.html" target="_blank"><img src="__PUBLIC__/Home/images/by_button.png"></a>
+  <a href="list.html" target="_blank"><img src="__PUBLIC__/Home/images/dc_button.png"></a>
+ </aside>
+ <div class="F-middle">
+ <ul class="rslides f426x240">
+  <volist name="food" id="vol">
+        <li><a href="__MODULE__/Food/detail/id/{$vol.id}"><img src="{$vol.is_logo_small}" style="width:600px;hight:400px;"/></a></li>
+  </volist>
+    </ul>
+ </div>
+ <aside class="N-right">
+  <div class="N-title">十分钟简介 <i>COMPANY NEWS</i></div>
+  <ul class="Newslist">
+   <li><i></i><a href="article_read.html" target="_blank" title="这里调用新闻标题...">欢迎来到十分钟点餐站...</a></li>
+   <li><i></i><a href="article_read.html" target="_blank" title="这里调用新闻标题...">中式、西式,应有尽有...</a></li>
+  </ul>
+  <ul class="Orderlist" style="font-size:13px">
+   <li>
+     <p><i class="State03" style="margin-left:100px;">十分钟点餐</i></p>
+     <p>公司创立于2017年11月,由<font style="color:red;font-size:16px"><u>段二狗、秦程程、王想、李小萃、陶小彤</u></font>在北京黑马大厦创立</p>
+     <p></p>
+   </li>
+   <li>
+    <p style="font-size:12px;margin-top:15px;">
+      <span><i class="State03">中餐</i></span>
+      &ensp;=>
+      <span><i class="State01">北京烤鸭</i></span>
+      <span><i class="State01">上海烤鸭</i></span>
+    </p>
+    
+    <p style="margin-top:5px;font-size:12px">
+      <span><i class="State03">西餐</i></span>
+      &ensp;=>
+      <span><i class="State02">牛排</i></span>
+      <span><i class="State02">虾米</i></span>
+      <span><i class="State02">回转寿司</i></span>
+    </p>
+
+   </li>
+   <li>
+     <p style="color:orange;">网上定外卖,吃货新时代</p>
+     <p>对于那些爱吃又很宅的人来说,再适合不过了</p>
+     <p>在家一个电话,直接预订周边美食,十分钟送到</p>
+   </li>
+  </ul>
+  
+ </aside>
+</section>
+<section class="Sfainfor">
+ <article class="Sflist">
+  <div id="Indexouter">
+   <ul id="Indextab">
+    <li class="current">点菜</li>
+    <li>餐馆</li>
+    <p class="class_B">
+   
+   
+    </p>
+   </ul>
+  <div id="Indexcontent">
+   <ul style="display:block;">
+    <li>
+      <p class="seekarea">
+        <volist name="city" id="vol">
+          <a href="javascript:;" name="ops"  class="cur mnunss" >{$vol}</a>
+        </volist>
+    </p>
+
+     <div class="SCcontent">
+
+     <volist name="food" id="vol">
+      <a href="__MODULE__/Food/detail/id/{$vol.id}" name="menu" target="_blank" title="{$vol.res_name}">
+      <figure>
+       <img src="{$vol.is_logo_small}">
+       <figcaption>
+       <span class="title">{$vol.food_name}</span>
+       <span class="price"><i>￥</i>{$vol.food_nowprice}</span>
+       </figcaption>
+      </figure>
+      </a>
+      </volist>
+
+     </div>
+     <div class="bestshop">
+     <volist name="rest" id="vol">
+       <a href="__MODULE__/Res/detail/id/{$vol.id}" target="_blank" title="{$vol.res_name}">
+      <figure>
+       <img src="{$vol.res_logo}">
+      </figure>
+      </a>
+     </volist>
+     </div>
+    </li>
+   </ul>
+   <ul>
+  <li>
+  <!--点击餐馆之后的城市-->
+   <p class="seekarea">
+        <volist name="rest" id="vol">
+          <a href="javascript:;" name="restaurant"  class="cur mnunss" >{$vol}</a>
+        </volist>
+    </p>
+
+     <div class="DCcontent">
+      <volist name="rest" id="vol">
+       <a href="__MODULE__/Res/detail/id/{$vol.id}" target="_blank" title="TITLE:{$vol.res_name}">
+       <figure>
+       <img src="{$vol.res_logo}">
+       <figcaption>
+       <span class="title">{$vol.res_name}</span>
+       <span class="price">预定折扣：<i>8.9折</i></span>
+       </figcaption>
+       <p class="p1"><q>人均价格:{$vol.res_price}，提供免费WiFi。</q></p>
+       <p class="p2">
+       店铺评分：
+       <img src="__PUBLIC__/Home/images/star-on.png">
+       <img src="__PUBLIC__/Home/images/star-on.png">
+       <img src="__PUBLIC__/Home/images/star-on.png">
+       <img src="__PUBLIC__/Home/images/star-on.png">
+       <img src="__PUBLIC__/Home/images/star-off.png">
+       </p>
+       <p class="p3">店铺地址：{$vol.res_pro}{$vol.res_city}{$vol.res_area}{$vol.res_address}***{$vol.res_name}...</p>
+       </figure>
+       </a>
+     </volist>
+
+     </div>
+  </li>
+  </ul>
+ </div>
+ </div>
+ </article>
+ <aside class="A-infor">
+  <img src="__PUBLIC__/Home/upload/2014911.jpg">
+  <div class="usercomment">
+   <span>用户菜品点评</span>
+   <ul>
+    <li>
+     <img src="__PUBLIC__/Home/upload/01.jpg">
+     用户“DeathGhost”对[ 老李川菜馆 ]“酸辣土豆丝”评说：味道挺不错，送餐速度挺快...
+    </li>
+    <li>
+     <img src="__PUBLIC__/Home/upload/02.jpg">
+     用户“DeathGhost”对[ 魏家凉皮 ]“酸辣土豆丝”评说：味道挺不错，送餐速度挺快...
+    </li>
+   </ul>
+  </div>
+ </aside>
+</section>
+<script>
+$(function(){
+   $('a[name=ops]').click(function(){
+     var city=$(this).html();
+       $.ajax({
+          'url':'__CONTROLLER__/foodCity',
+          'type':'post',
+          'dataType':'json',
+          'data':'city='+city,
+          'success':function(res){
+                if(res.code==10000)
+                {
+                   $('.SCcontent').html(res.data);
+
+                }
+                else
+                {
+                   $('.SCcontent').html('暂无数据');
+                }
+           }
+
+       });
+     })
+})
+
+$(function(){
+   $('a[name=restaurant]').click(function(){
+     var rest=$(this).html();
+       $.ajax({
+          'url':'__CONTROLLER__/foodRes',
+          'type':'post',
+          'dataType':'json',
+          'data':'rest='+rest,
+          'success':function(res){
+                if(res.code==10000)
+                {
+                   $('.DCcontent').html(res.data);
+
+                }
+                else
+                {
+                   $('.DCcontent').html('暂无数据');
+                }
+           }
+
+       });
+     })
+})
+
+   
+</script>
+
+

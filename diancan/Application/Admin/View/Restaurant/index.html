@@ -1,0 +1,111 @@
+﻿<!--_meta 作为公共模版分离出去-->
+<include file="Common/_meta"/>
+<!--/meta 作为公共模版分离出去-->
+<title>餐馆列表</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 餐馆管理 <span class="c-gray en">&gt;</span> 餐馆列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+	<div class="page-container">
+			<span class="l">
+				<a class="btn btn-primary radius" onclick="article_add('添加餐馆','__MODULE__/Restaurant/add')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加餐馆</a></span> <span class="r">共有数据：<strong>{$count}</strong> 条</span>
+	</div>
+	<div class="page-container">
+		<table class="table table-border table-bordered table-bg table-hover table-sort table-responsive">
+			<thead>
+			<tr class="text-c" width="1300">
+				<th>ID</th>
+				<th>餐馆名称</th>
+				<th>餐馆省区</th>
+				<th>餐馆市区</th>
+				<th>餐馆区</th>
+				<th>具体街道</th>
+				<th>餐馆logo</th>
+				<th>餐馆分类</th>
+				<th>人均价格</th>
+				<th>餐馆点击量</th>
+				<th>餐馆销量</th>
+				<th>上线时间</th>
+				<th>所属卖家</th>
+				<th>操作</th>
+			</tr>
+			</thead>
+			<tbody>
+			<volist name="data" id="vol">
+				<tr class="text-c">
+					<td>{$vol.id}</td>
+					<td class="text-l"><u style="cursor:pointer" class="text-primary" onClick="article_edit('查看','article-zhang.html','10001')" title="查看">{$vol.res_name}</u></td>
+					<td>{$vol.res_pro}</td>
+					<td>{$vol.res_city}</td>
+					<td>{$vol.res_area}</td>
+					<td>{$vol.res_address}</td>
+					<td><a href="javascript:;"><img width="90" class="picture-thumb" src="{$vol.res_logo}"></a></td>
+					<td>{$vol.cate_id}</td>
+					<td>{$vol.res_price}</td>
+					<td>{$vol.res_hit}</td>
+					<td>{$vol.res_num}</td>
+					<td>{$vol.res_ctime}</td>
+					<td>{$vol.seller_name}</td>
+					<td class="f-14 td-manage">
+						<a style="text-decoration:none" class="ml-5" onClick="article_edit('餐馆编辑','__CONTROLLER__/edit/id/{$vol.id}')"
+						   href="javascript:void(0);" title="编辑">
+							<i class="Hui-iconfont">&#xe6df;</i></a>
+									</td>
+					</tr>
+				</volist>
+				</tbody>
+			</table>
+	</div>
+
+<!--_footer 作为公共模版分离出去-->
+<include file="Common/_footer" />
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('table').dataTable({
+            "aLengthMenu":[[5,10,15,30,-1],["5","10","15","30","ALL"]]//二组数组，第一组数量，第二组说明文字;
+        });
+    });
+/*餐馆-添加*/
+function article_add(title,url,w,h){
+	var index = layer.open({
+		type: 2,
+		title: title,
+		content: url
+	});
+	layer.full(index);
+}
+/*餐馆-编辑*/
+function article_edit(title,url,id,w,h){
+	var index = layer.open({
+		type: 2,
+		title: title,
+		content: url
+	});
+	layer.full(index);
+}
+/*餐馆-删除*/
+function article_del(obj,id){
+	layer.confirm('确认要删除吗？',function(index){
+		$.ajax({
+			type: 'POST',
+			url: '',
+			dataType: 'json',
+			success: function(data){
+				$(obj).parents("tr").remove();
+				layer.msg('已删除!',{icon:1,time:1000});
+			},
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});		
+	});
+}
+
+</script> 
+
+</body>
+</html>

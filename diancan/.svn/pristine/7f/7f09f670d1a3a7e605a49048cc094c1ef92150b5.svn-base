@@ -1,0 +1,10 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class IndexController extends Controller {
+    public function index(){
+    	//临时关闭模板布局
+	
+     	$this->display();
+    }
+}

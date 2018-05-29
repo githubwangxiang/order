@@ -1,0 +1,74 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+class CateController extends Controller
+{
+	//餐馆分类列表
+	public function index(){
+		//实例化模型
+		$cate = D('Cate')->select();
+		$this->assign("cate",$cate);
+		$this->display();
+	}
+
+	//添加餐馆分类
+	public function add(){
+		if(IS_POST)
+		{
+			//接收参数
+			$data = I('post.');
+			$res = D('Cate')->add($data);
+			if($res){
+				$this->success("添加成功",U("Admin/Cate/index"));
+			}else{
+				$this->error("添加失败");
+			}
+		}
+		else
+        {
+			//查找所有的顶级分类
+            $topcate=D('cate')->where(['pid'=>0])->select();
+            $this->assign('topcate',$topcate);
+            $this->display();
+		}
+	}
+
+	//修改分类列表
+	public function edit(){
+		if(IS_POST){
+			//接收参数
+			$data = I('post.');
+			$res = D('Cate')->save($data);
+			if($res !== false){
+				$this->success("修改成功",U("Admin/Cate/edit"));
+			}else{
+				$this->error("修改失败");
+			}
+			
+		}else{
+			//接收id
+			$id = I('get.id');
+			//查询餐馆分类
+			$cate = D('Cate')->where(['id'=>$id])->find();
+			$this->assign('cate',$cate);
+			//查询所有的餐馆名称
+			$rest = D('Cate')->alias('t1')->field('t2.res_name')->join("left join 
+        		restaurant t2 on t1.id = t2.cate_id")->select();
+            $this->assign('rest',$rest);
+			$this->display();
+		}
+	}
+
+	//删除分类列表
+	public function del(){
+		//接收参数
+		$id = I('get.id');
+		$res = D('Cate')->where(['id'=>$id])->delete();
+		if($res !== false){
+			$this->success('删除成功',U('Admin/Cate/index'));
+		}else{
+			$this->error("删除失败");
+		}
+	}
+}
+?>

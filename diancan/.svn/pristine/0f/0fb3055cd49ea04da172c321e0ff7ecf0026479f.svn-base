@@ -1,0 +1,26 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+/**
+ * Created by PhpStorm.
+ * User: 二狗
+ * Date: 2017/11/4
+ * Time: 21:42
+ */
+
+
+class IndexController extends Controller
+{
+//显示后台的首页
+
+    public function index()
+    {
+        $this->display('index');
+    }
+
+    public function  welcome()
+    {
+        $this->display('welcome');
+    }
+
+}

@@ -1,0 +1,47 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class GoodsController extends Controller{
+    //积分商品列表
+    public function index(){
+        //获取积分商品数据
+        $goods = D('Goods') -> select();
+        $this -> assign('goods',$goods);
+        //获取餐馆数据
+        $restaurant = D('Restaurant') -> limit(0,4) -> select();
+        $this -> assign('restaurant',$restaurant);
+        $this -> display();
+    }
+    //积分商品详情页
+    public function detail(){
+        $id = I('get.id');
+        $goods = D('Goods') -> find($id);
+        $this -> assign('goods',$goods);
+        $food = D('Food')  -> order('food_sale desc') -> limit(0,2) -> select();
+        $this -> assign('food',$food);
+        $this -> display();
+    }
+    //加入购物车
+    public function addcart(){
+        //处理表单提交
+        if(IS_POST){
+            //post方式提交表单
+            $data = I('post.');
+
+
+            if(!$data['food_id'] || $data['is_food'] || !$data['num']){
+                echo  "<script>alert('参数异常');</script>";die;
+
+            }
+            $res = D('Cart') ->addCart($data['food_id'],$data['is_food'],$data['num']);
+            if($res){
+                $this->redirect('Home/Cart/index');
+            }else{
+                echo  "<script>alert('服务器异常');</script>";die;
+            }
+        }else{
+            $this->redirect('Home/Index/index');
+        }
+    }
+
+}

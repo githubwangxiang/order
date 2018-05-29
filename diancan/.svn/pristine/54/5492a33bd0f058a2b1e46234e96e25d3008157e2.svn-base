@@ -1,0 +1,180 @@
+7<link href="__PUBLIC__/Home/Pstyle/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascrip" src="__PUBLIC__/Home/js/public.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Homejs/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Homejs/jqpublic.js"></script>
+<!--
+Author: DeathGhost
+Author URI: http://www.deathghost.cn
+-->
+<script>
+$(function(){   
+  $('.title-list li').click(function(){
+    var liindex = $('.title-list li').index(this);
+    $(this).addClass('on').siblings().removeClass('on');
+    $('.menutab-wrap div.menutab').eq(liindex).fadeIn(150).siblings('div.menutab').hide();
+    var liWidth = $('.title-list li').width();
+    $('.shopcontent .title-list p').stop(false,true).animate({'left' : liindex * liWidth + 'px'},300);
+  });
+  
+  $('.menutab-wrap .menutab li').hover(function(){
+    $(this).css("border-color","#ff6600");
+    $(this).find('p > a').css('color','#ff6600');
+  },function(){
+    $(this).css("border-color","#fafafa");
+    $(this).find('p > a').css('color','#666666');
+  });
+  });
+</script>
+
+<!--Start content-->
+<section class="slp">
+ <section class="food-hd">
+  <div class="foodpic">
+   <img src="{$food.is_logo_small}" id="showimg">
+    <ul class="smallpic">
+     <li><img src="{$food.is_logo_small}" onmouseover="show(this)" onmouseout="hide()"></li>
+    </ul>
+  </div>
+  <div class="foodtext">
+   <div class="foodname_a">
+    <h1>{$food.food_name}</h1>
+    <volist name="data" id="vol">
+    <p>{$vol.res_city}</p>
+  </volist>
+   </div>
+   <div class="price_a">
+    <p class="price01">促销：￥<span>{$food.food_price}</span></p>
+    <p class="price02">价格：￥<s>{$food.food_nowprice}</s></p>
+   </div>
+   <div class="Freight">
+    <span>配送费用：</span>
+    <span><i>未央区</i>至<i>莲湖区</i></span>
+    <span>10.00</span>
+   </div>
+   <ul class="Tran_infor">
+     <li>
+      <p class="Numerical">3</p>
+      <p>月销量</p>
+     </li>
+     <li class="line">
+      <p class="Numerical">58</p>
+      <p>累计评价</p>
+     </li>
+     <li>
+      <p class="Numerical">59</p>
+      <p>送幸福积分</p>
+     </li>
+   </ul>
+   <form action="__MODUEL__/Res/addcart" method="post">
+   <div class="BuyNo">
+    <span>我要买：<input type="number" name="Number" required autofocus min="1" value="1"/>份</span>
+    <span>库存：3258</span>
+    <div class="Buybutton">
+     <input name="LikBasket" type="submit" value="加入购物车" class="BuyB">
+     <a href="/"><span class="Backhome">进入店铺首页</span></a>
+    </div>
+   </div>
+  </div>
+  <div class="viewhistory">
+   <span class="VHtitle">看了又看</span>
+   <ul class="Fsulist">
+    <li>
+     <a href="__CONTROLLER__/detailsp/id/{$food.id}" target="_blank" title="{$food.food_name}"><img src="{$food.is_logo_small}"></a>
+     <p>{$food.food_name}</p>
+     <p>￥{$food.food_price}</p>
+    </li>
+   </ul>
+  </div>
+</form>
+ </section>
+ <!--bottom content-->
+ <section class="Bcontent">
+  <article>
+   <div class="shopcontent">
+  <div class="title2 cf">
+    <ul class="title-list fr cf ">
+      <li class="on">详细说明</li>
+      <li>评价详情（5）</li>
+      <li>成交记录（5）</li>
+      <p><b></b></p>
+    </ul>
+  </div>
+  <div class="menutab-wrap">
+    <!--case1-->
+    <div class="menutab show">
+      <div class="cont_padding">
+       <img src="{$food.is_logo_small}">
+       <p>{$food.food_introduce}</p>
+      </div>
+    </div>
+    <!--case2-->
+    <div class="menutab">
+     <div class="cont_padding">
+      <table class="Dcomment">
+       <th width="80%">评价内容</th>
+       <th width="20%" style="text-align:right">评价人</th>
+       <tr>
+       <td>
+        还不错，速度倒是挺速度倒是挺快速度倒是挺快速度倒是挺快速度倒是挺快速度倒是挺快速度倒是挺快速度倒是挺快速度倒是挺快速度倒是挺快速度倒是挺快速度倒是挺快快...
+        <time>2016-05-31 22:30:39</time>
+       </td>
+       <td align="right">DEATHGHOST</td>
+       </tr>
+      </table>
+      <div class="TurnPage">
+         <a href="#">
+          <span class="Prev"><i></i>首页</span>
+         </a>
+         <a href="#"><span class="PNumber">1</span></a>
+         <a href="#"><span class="PNumber">2</span></a>
+         <a href="#">
+         <span class="Next">最后一页<i></i></span>
+        </a>
+       </div>
+     </div>
+    </div>
+    <!--case4-->
+    <div class="menutab">
+     <div class="cont_padding">
+     
+      <table width="888">
+       <th width="35%">买家</th>
+       <th width="20%">价格</th>
+       <th width="15%">数量</th>
+       <th width="30%">成交时间</th>
+       <tr height="40">
+        <td>d***t</td>
+        <td>￥59</td>
+        <td>1</td>
+        <td>2014-9-18 11:13:07</td>
+       </tr>
+      </table>
+     
+     </div>
+       <div class="TurnPage">
+         <a href="#">
+          <span class="Prev"><i></i>首页</span>
+         </a>
+         <a href="#"><span class="PNumber">1</span></a>
+         <a href="#"><span class="PNumber">2</span></a>
+         <a href="#">
+         <span class="Next">最后一页<i></i></span>
+        </a>
+       </div>
+   </div>
+  </article>
+  <!--ad&other infor-->
+  <aside>
+   <!--广告位或推荐位-->
+   <a href="#" title="广告位占位图片" target="_blank"><img src="__PUBLIC__/Home/upload/2014912.jpg"></a>
+  </aside>
+ </section>
+</section>
+<!--End content-->
+<script>
+  // 给购物车绑定事件
+  $('#LikBasket').click(function(){
+    // 表单提交
+    $('from').submit();
+  })
+</script>

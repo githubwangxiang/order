@@ -1,0 +1,142 @@
+﻿<include file="Common/_meta"  />
+
+<title>新建网站角色 - 管理员管理 - H-ui.admin v3.1</title>
+<meta name="keywords" content="H-ui.admin v3.1,H-ui网站后台模版,后台模版下载,后台管理系统模版,HTML后台模版下载">
+<meta name="description" content="H-ui.admin v3.1，是一款由国人开发的轻量级扁平化网站后台模板，完全免费开源的网站后台管理系统模版，适合中小型CMS后台系统。">
+</head>
+<body>
+<article class="page-container">
+	<form action="__MODULE__/Role/detail" method="post" class="form form-horizontal" id="form-admin-role-add">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>角色名称：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$auths.role_name}" placeholder="" id="roleName" name="roleName" readonly="readonly">
+				<input type="hidden" value="{$auths.id}" name="id">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3">权限分配：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+<volist name="first_auths" id="value">
+	<dl class="permission-list">
+		<dt>
+			<label>
+				<input type="checkbox" value="{$value.id}" name="user-Character-0[]" id="user-Character-1" class="ok1"
+				<in name="value.id" value="$auths.auth_ids">checked="checked"</in>  >
+					{$value.auth_name}
+			</label>
+		</dt>
+	<volist name="second_auths" id="val">
+            <if condition=" $val.pid == $value.id ">
+		        <dd>
+					<dl class="cl permission-list2">
+						<dt>
+							<label class="">
+								<input type="checkbox" value="{$val.id}" name="user-Character-1-0[]" id="user-Character-1-0"
+								<in name="val.id" value="$auths.auth_ids">checked="checked"</in>>
+								{$val.auth_name}</label>
+                             ----控制器名称：{$val.auth_c}
+							 方法名称：{$val.auth_a}
+						</dt>
+					</dl>
+				</dd>
+			</if>
+	</volist>
+	</dl>
+</volist>
+			</div>
+		</div>
+		<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+				<button type="submit" class="btn btn-success radius" id="role-save" name="admin-role-save"><i class="icon-ok"></i> 确定</button>
+			</div>
+		</div>
+	</form>
+</article>
+
+
+<include file="Common/_footer"  />
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/lib/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".permission-list dt input:checkbox").click(function(){
+
+		$(this).closest("dl").find("dd input:checkbox").prop("checked",$(this).prop("checked"));
+	});
+	$(".permission-list2 dd input:checkbox").click(function(){
+
+		var l =$(this).parent().parent().find("input:checked").length;
+		var l2=$(this).parents(".permission-list").find(".permission-list2 dd").find("input:checked").length;
+		if($(this).prop("checked")){
+			$(this).closest("dl").find("dt input:checkbox").prop("checked",true);
+			$(this).parents(".permission-list").find("dt").first().find("input:checkbox").prop("checked",true);
+		}
+		else{
+			if(l==0){
+				$(this).closest("dl").find("dt input:checkbox").prop("checked",false);
+			}
+			if(l2==0){
+				$(this).parents(".permission-list").find("dt").first().find("input:checkbox").prop("checked",false);
+			}
+		}
+	});
+
+	//添加一个点击事件**************************************
+	$(".permission-list2 dt input:checkbox").click(function(){
+     //获取兄弟节点的选中个数
+		var l=$(this).closest('dd').parent().find("dd input:checked").length;
+		if(l<1)
+		{
+            $(this).closest('dd').parent().first().children().find("input[class=ok1]").prop('checked',false);
+		}else
+		{
+            $(this).closest('dd').parent().first().children().find("input[class=ok1]").prop('checked',true);
+        }
+//    console.log($(this));
+	})
+//************************************************系统自带的表单提交
+
+//	$("#form-admin-role-add").validate({
+//		rules:{
+//			roleName:{
+//				required:true,
+//			},
+//		},
+//		onkeyup:false,
+//		focusCleanup:true,
+//		success:"valid",
+//		submitHandler:function(form){
+//			$(form).ajaxSubmit();
+//			var index = parent.layer.getFrameIndex(window.name);
+//			parent.layer.close(index);
+//		}
+//	});
+
+
+});
+
+//********************************************给按钮添加判断以及请求
+	$('#role-save').click(function(){
+        //判断输入框的值是否为空
+        var roleName=$('#roleName').val();
+        //判断是否有空格
+        var r=/\s/g;
+        var res=r.test(roleName);
+        if(roleName==''||res)
+        {
+            alert('输入值不可以为空以及包含空格');
+            return false
+        }
+
+	})
+
+</script>
+
+
+
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

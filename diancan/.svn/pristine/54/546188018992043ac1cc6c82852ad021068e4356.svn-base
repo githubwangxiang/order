@@ -1,0 +1,146 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class InfoController extends Controller
+{
+    //显示用户中心首页
+    public function index()
+    {
+        //判断用户是否登录
+      /*  $user=D('user')->where(['id'=>1])->find();
+        session('user_info',$user);*/
+
+        if(session('?user_info'))
+        {
+            //登录成功
+            $id=session('user_info.id');
+            //查询用户的信息
+            $user=D('user')->where(['id'=>$id])->find();
+            $this->assign('user',$user);
+            $this->display();
+        }
+        else
+        {
+            //没有登录
+            echo "<script>alert('请登录');</script>";
+            die;
+
+        }
+
+
+    }
+    //显示用户中心的订单
+    public function userOrder()
+    {
+        //获得用户的id
+        $id=session('user_info.id');
+        //根据用户的id查用户的所有的订单
+        $order=D('fdorder')->field('t1.*,t2.address_name')->alias('t1')->where(['t1.user_id'=>$id])->join('left join address t2 on  t1.address_id=t2.id')->select();
+        $this->assign('order',$order);
+        $this->display();
+    }
+
+
+    
+    //显示积分
+    public function grade()
+    {
+        $id=session('user_info.id');
+        $num=D('user')->field('grade_num')->where(['id'=>$id])->find();
+        $this->assign('num',$num);
+
+        $this->display();
+    }
+    //账户管理
+    public function manege()
+    {
+
+        $id=session('user_info.id');
+        $user=D('user')->where(['id'=>$id])->find();
+        $this->assign('user',$user);
+        $this->display();
+    }
+    public function editPass()
+    {
+        $data=I('post.');
+        //加密原密码
+        $ypass=encrypt_password($data['ypass']);
+        $xpass=$data['xpass'];
+        $qpass=$data['qpass'];
+        $id=session('user_info.id');
+        $user=D('user')->where(['id'=>$id,'password'=>$ypass])->find();
+        if($user)
+        {
+            //对密码加密
+            $xpass=encrypt_password($xpass);
+            $r=D('user')->where(['id'=>5])->save(array('password'=>$xpass));
+            if($r!=false)
+            {
+                    //修改成功
+                $return=array('code'=>10000,'msg'=>'修改成功');
+                $this->ajaxReturn($return);
+            }
+            else
+            {
+                $return=array('code'=>10002,'msg'=>'服务器异常');
+                $this->ajaxReturn($return);
+            }
+        }
+        else
+        {
+            $return=array('code'=>10001,'msg'=>'原密码不正确，请重新输入');
+            $this->ajaxReturn($return);
+        }
+
+
+
+    }
+    //修改个人资料
+    public function userInfo()
+    {
+        $user_name=I('post.user_name');
+        $data=$_FILES;
+        if($data['error']!=0)
+        {
+            echo "<script>alert('上传头像失败');</script>";
+            die;
+        }
+        //实例化文件上传类
+        //设置配置文件
+        $config=array(
+            'maxSize' => 5 * 1024 * 1024,
+            'exts' => array('jpeg', 'gif', 'jpg', 'png'),
+            'rootPath'      =>  './Public/Uploads/head/', //保存根路径
+        );
+        $upload=new \Think\Upload($config);
+        $upinfo=$upload->uploadOne($data['header']);
+        if($upinfo)
+        {
+            //获得图片存储的路径
+            $head=UPLOAD_PATH.'/head/'.$upinfo['savepath'].$upinfo["savename"];
+            //修改数据库
+            $id=session('user_info.id');
+            $row=D('user')->where(['id'=>$id])->save(array('head'=>$head,'user_name'=>$user_name));
+             if($row!==false)
+             {
+                 $url=U('Home/Info/index');
+
+                 echo "<script>alert('修改成功');location.href='$url'</script>";
+             }
+             else
+             {
+                 echo "<script>alert('修改失败');history.back();</script>";
+             }
+        }
+
+
+
+
+    }
+
+    public function uploader()
+    {
+
+    }
+
+}

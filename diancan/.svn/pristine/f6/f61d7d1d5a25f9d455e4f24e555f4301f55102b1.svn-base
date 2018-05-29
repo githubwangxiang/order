@@ -1,0 +1,198 @@
+
+<!--Start content-->
+<section class="Psection MT20" id="Cflow">
+<!--如果用户未添加收货地址，则显示如下-->
+ <div class="confirm_addr_f">
+  <span class="flow_title">收货地址：</span>
+
+  <form action="#">
+   <ul class="address">
+    <volist name="address_data" id="address" key="k">
+      <li id="style"><input type="radio" value="{$address.id}" name="address"
+       <if condition=" $k == 1 "> checked='checked' </if>
+ id="1" name="rdColor" onclick="changeColor(1)"/>
+              {$address.address}{$address.save_area}({$address.save_name}收）
+              <span class="fontcolor">{$address.address_phone}</span></li>
+    </volist>
+    <li><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><img src="__PUBLIC__/Home/images/newaddress.png"/></a></li>
+   </ul>
+   </form>
+   <!--add new address-->
+
+ </div>
+<!--配送方式及支付，则显示如下-->
+
+ <div class="pay_delivery">
+  <!--</table>-->
+  <span class="flow_title">在线支付方式：</span>
+   <form action="#">
+    <ul>
+    <li><input type="radio" name="pay" checked="checked" id="alipay" value="alipay" /><label for="alipay"><i class="alipay"></i></label></li>
+    </ul>
+   </form>
+  </div>
+  <form action="#">
+  <div class="inforlist">
+   <span class="flow_title">商品清单</span>
+   <table>
+    <th>名称</th>
+    <th>商家</th>
+    <th>数量</th>
+    <th>价格</th>
+    <th>小计</th>
+<!--遍历食品数据-->
+<volist name="foods" id="food">
+ <tr>
+   <td name="food_name">{$food['info']['food_name']}</td>
+   <td>{$food['info']['res_name']}</td>
+   <td>{$food['num']}</td>
+   <td>￥{$food['info']['food_nowprice']}</td>
+   <td>￥{$food['total']}</td>
+ </tr>
+</volist>
+<!--遍历商品数据-->
+    <volist name="goods" id="good">
+    <tr>
+     <td name="good_name">{$good['info']['goods_name']}</td>
+     <td>积分商场</td>
+     <td >{$good['num']}</td>
+     <td>{$good['info']['goods_grade']}积分</td>
+     <td>{$good['grade']}积分</td>
+    </tr>
+    </volist>
+
+   </table>
+
+
+   <div class="Order_M">
+
+     </p>
+    </div>
+    <div class="Sum_infor">
+    <p class="p2">合计：<span id=''>{$all_price}元</span>
+                       <span name="all_grade">{$all_grade|default=0}</span>积分</p>
+    <input type="button" value="提交订单"  name="but" class="p3button">
+    </div>
+   </div>
+   </form>
+
+<!--组合需要上传的数据    -->
+    <form action="__CONTROLLER__/flowfood" method="post" id="sub" style="display: none">
+        <input type="text" name="user_id" value="{$Think.session.user_info.id}">
+        <input type="text" name="address_id" value="">
+        <!--<input type="text" name="order_id">-->
+        <input type="text" name="foods_name" value="">
+        <input type="text" name="goods_name" value="">
+        <!--<input type="text" name="order_time">-->
+        <input type="text" name="address_name" value="{$address.address}{$address.save_area}">
+        <input type="text" name="order_price" value="{$all_price}">
+        <input type="text" name="order_grade" value="{$all_grade}">
+    </form>
+ </div>
+</section>
+
+
+<script>
+    //添加点击订单的事件
+  $('input[name=but]').click(function(){
+      //将数据进行拼接
+//***************************获取地址的id
+      var address_id=$('input[name=address]:checked').val();
+      $('input[name=address_id]').val(address_id);
+////******************将食品名字进行拼接，将名字进行遍历
+      var foods_names=$('td[name=food_name]');
+      var foods_name='';
+      $.each(foods_names,function (k,v) {
+          //将数据进行拼接
+          foods_name+=$(v).html()+',';
+      })
+      foods_name=foods_name.slice(0,-1);
+      $('input[name=foods_name]').val(foods_name);
+////**********************将积分的名字进行拼接，再进行遍历
+      var goods_names=$('td[name=good_name]');
+      var goods_name='';
+      $.each(goods_names,function (k,v) {
+          //将数据进行拼接
+          goods_name+=$(v).html()+',';
+      })
+      goods_name=goods_name.slice(0,-1);
+      $('input[name=goods_name]').val(goods_name);
+////**********************************************
+      var user_id=$('input[name=usr_id]').val();
+      var user_id=1;
+      var  grade=$('span[name=all_grade]').html();
+var data={
+    'user_id':user_id,
+    'address_id':address_id,
+    'foods_name':goods_name,
+    'address_name':$('input[name=address_name]').val(),
+    'order_price':$('input[name=order_grade]').val(),
+    'grade':grade};
+    //先将积分扣除，因为积分不属于支付宝
+      //判断是否有积分商品
+      if(grade==0)
+      {
+          //进行页面的跳转，提交按钮
+          $('#sub').submit();
+      }else
+      {
+          //获取积分
+          $.ajax({
+              'url':'__MODULE__/Fdorder/flowgoods',
+              'type':'post',
+              'dataType':'json',
+              'data':data,
+              'success':function(res){
+                  if(res.code!=1000)
+                  {
+                      alert(res.msg);
+                      return false;
+                  }else
+                  {
+                      //扣除成功，将积分商品的数据加入表单
+                      alert(res.msg);
+                      //进行页面的跳转，提交按钮
+                      $('#sub').submit();
+                  }
+              }
+          })
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+  })
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<section class="Psection MT20 Textcenter" style="display:none;" id="Aflow">-->
+  <!--&lt;!&ndash; 订单提交成功后则显示如下 &ndash;&gt;-->
+  <!--<p class="Font14 Lineheight35 FontW">恭喜你！订单提交成功！</p>-->
+  <!--<p class="Font14 Lineheight35 FontW">您的订单编号为：<span class="CorRed">201409205134</span></p>-->
+  <!--<p class="Font14 Lineheight35 FontW">共计金额：<span class="CorRed">￥359</span></p>-->
+  <!--<p><button type="button" class="Lineheight35"><a href="#" target="_blank">支付宝立即支付</a></button><button type="button" class="Lineheight35"><a href="user_center.html">进入用户中心</button></p>-->
+<!--</section>-->
+<!--End content-->

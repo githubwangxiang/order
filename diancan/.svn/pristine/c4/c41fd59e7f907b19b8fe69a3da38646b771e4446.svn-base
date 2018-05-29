@@ -1,0 +1,85 @@
+<?php
+namespace Admin\Model;
+use Think\Model;
+class FoodModel extends Model{
+    // 设置字段映射
+    
+	  //封装一个图片上传,在添加和修改功能都能使用
+    public function upload_logo($file,$data){
+        //方法有两个参数 $file是文件上传需要的数据
+        //$data是保存到数据库需要的数据
+        //在添加商品基本数据之前，先实现文件上传，得到图片地址信息
+        if($file && $file['error'] == 0){
+            //自定义配置数据
+            $config = array(
+                'maxSize' => 5 * 1024 * 1024,//上传文件的自定义大小限制
+                'exts' => array('jpg','png','gif','jpeg'),//允许上传文件的后缀名
+                'rootPath' => ROOT_PATH . UPLOAD_PATH,//保存的根路径
+            );
+            //实例化文件上传类
+            $upload = new \Think\Upload($config);
+            //得到上传文件的信息，一个一维数组
+            $upload_res = $upload->uploadOne($file);
+            if(!$upload_res){
+                //上传失败，获取错误信息
+                $error = $upload -> getError();
+                //将上传类的错误信息，记录到模型类的error属性上
+                $this->error = $error;
+                return false;
+            }
+            //上传成功，需要拼接文件保存路径，用于添加到数据表
+            $data['is_logo_small'] = UPLOAD_PATH . $upload_res['savepath'] . $upload_res['savename'];
+            //数据处理成功  返回新的data
+            return $data;
+        }else{
+            return $data;
+        }
+    }
+
+  //封装一个上传相册图片的方法
+    public function upload_pics($files, $id){
+        //实例化文件上传类
+        //自定义配置数据
+        $config = array(
+            'maxSize'       =>  5 * 1024 * 1024, //上传的文件大小限制 (0-不做限制) byte
+            'exts'          =>  array('jpg', 'png', 'gif', 'jpeg'), //允许上传的文件后缀
+            'rootPath'      =>  ROOT_PATH . UPLOAD_PATH, //保存根路径
+        );
+        $upload = new \Think\Upload($config);
+        $upload_res = $upload -> upload($files);
+        // dump($upload_res);die;
+        if(!$upload_res){
+            //上传失败，获取错误信息
+            $error = $upload -> getError();
+            //将上传类的错误信息，记录到模型类上error属性上
+            $this -> error = $error;
+            return false;
+        }
+        //上传成功  $upload_res是一个二维数组  其中每一个文件都需要添加到相册表
+        foreach($upload_res as $k => $v){
+            //原始图片路径
+            $origin_pics = UPLOAD_PATH . $v['savepath'] . $v['savename'];
+            //生成三张不同尺寸的缩略图
+            $image = new \Think\Image();
+            $image -> open( ROOT_PATH . $origin_pics);
+
+            //生成800*800尺寸缩略图
+            $image -> thumb(800, 800);
+            $pics_800 = UPLOAD_PATH . $v['savepath'] . 'thumb800_' . $v['savename'];
+            $image -> save( ROOT_PATH . $pics_800);
+
+            //生成350*350尺寸缩略图
+            $image -> thumb(350, 350);
+            $pics_350 = UPLOAD_PATH . $v['savepath'] . 'thumb350_' . $v['savename'];
+            $image -> save( ROOT_PATH . $pics_350);
+
+            //生成50*50尺寸缩略图
+            $image -> thumb(50, 50);
+            $pics_50 = UPLOAD_PATH . $v['savepath'] . 'thumb50_' . $v['savename'];
+            $image -> save( ROOT_PATH . $pics_50);
+        }
+        return true;
+    }
+
+}
+?>

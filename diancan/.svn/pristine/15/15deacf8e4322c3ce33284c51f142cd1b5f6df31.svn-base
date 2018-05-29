@@ -1,0 +1,54 @@
+
+<!--Start content-->
+<section class="Psection MT20">
+<nav class="U-nav Font14 FontW">
+  <ul>
+      <li><i></i><a href="__CONTROLLER__/index">用户中心首页</a></li>
+      <li><i></i><a href="__CONTROLLER__/userOrder" id="order">我的订单</a></li>
+      <li><i></i><a href="__CONTROLLER__/userAddre">收货地址</a></li>
+      <li><i></i><a href="__CONTROLLER__/grade">我的积分</a></li>
+      <li><i></i><a href="__CONTROLLER__/manege">账户管理</a></li>
+      <li><i></i><a href="__CONTROLLER__/logOut">安全退出</a></li>
+  </ul>
+ </nav>
+ <article class="U-article Overflow">
+  <!--user order list-->
+  <section>
+    <table class="Myorder">
+     <th class="Font14 FontW">订单编号</th>
+     <th class="Font14 FontW">下单时间</th>
+     <th class="Font14 FontW">收件人</th>
+     <th class="Font14 FontW">订单总金额</th>
+     <th class="Font14 FontW">订单状态</th>
+     <th class="Font14 FontW">操作</th>
+    <volist name="order" id="vol" key="k">
+     <tr>
+      <td class="FontW"><a href="javascript:void(0);">{$vol.order_id}</a></td>
+      <td>{$vol.order_time|date="Y-m-d",###}</td>
+      <td>{$vol.address_name}</td>
+      <td>{$vol.order_price}</td>
+         <td><if condition=" $vol.order_status == 0  ">已付款<else/>已消费</if></td>
+      <td><if condition=" $vol.order_status == 0  "><a href="#">取消订单</a><else/> <a href="#">无法操作</a></if></td>
+     </tr>
+    </volist>
+   </table>
+    <div class="TurnPage">
+         <a href="#">
+          <span class="Prev"><i></i>首页</span>
+         </a>
+         <a href="#"><span class="PNumber">1</span></a>
+         <a href="#"><span class="PNumber">2</span></a>
+         <a href="#">
+         <span class="Next">最后一页<i></i></span>
+        </a>
+       </div>
+  </section>
+ </article>
+</section>
+<script type="text/javascript" src="__PUBLIC__/Home/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
+  <script>
+      $('table').dataTable({
+          "aLengthMenu":[[4,10,15,30,-1],["4","10","15","30","ALL"]]//二组数组，第一组数量，第二组说明文字;
+      });
+
+  </script>

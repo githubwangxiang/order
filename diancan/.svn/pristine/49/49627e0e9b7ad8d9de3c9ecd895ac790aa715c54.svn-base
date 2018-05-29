@@ -1,0 +1,60 @@
+<!--Start content-->
+<section class="Psection">
+ <section class="fslist_navtree">
+  <ul class="select">
+        <li class="select-list">
+			<dl id="select4">
+				<dt>价位区间：</dt>
+				<dd class="select-all selected"><a href="javascript:">全部</a></dd>
+				<dd><a href="javascript:" class="grade" onclick="getgoods(this)">1-100积分</a></dd>
+                <dd><a href="javascript:" class="grade" onclick="getgoods(this)">101-200积分</a></dd>
+                <dd><a href="javascript:" class="grade" onclick="getgoods(this)">201-300积分</a></dd>
+                <dd><a href="javascript:" class="grade" onclick="getgoods(this)">301-400积分</a></dd>
+                <dd><a href="javascript:" class="grade" onclick="getgoods(this)">401-500积分</a></dd>
+			</dl>
+		</li>
+		<li class="select-result">
+			<dl>
+			 <dd class="select-no">已选择：</dd>
+			</dl>
+		</li>
+	</ul>
+ </section>
+ <section class="CateL Overflow">
+  <ul>
+      <volist name="goods" id="vol">
+          <li>
+           <a href="__MODULE__/Goods/detail/id/{$vol.id}" target="_blank" title="{$vol.goods_name}">
+           <img src="{$vol.goods_logo}">
+           <p class="Overflow">{$vol.goods_name}</p>
+           <p class="Overflow">消耗：<span class="CorRed Font16">{$vol.goods_grade}</span>积分<i></i></p>
+           </a>
+          </li>
+      </volist>
+  </ul>
+ </section>
+ <aside class="CateR">
+ <!--广告位或推荐位-->
+  <div>
+   <a href="#" target="_blank"><img src="__PUBLIC__/Home/upload/ad.jpg"></a>
+  </div>
+  <div class="Hot_shop">
+   <span class="Hshoptile Font14 FontW Block">热门商家</span>
+   <ul>
+       <volist name="restaurant" id="vol">
+            <li>
+             <a href="shop.html" target="_blank" title="{$vol.res_name}"><img src="{$vol.res_logo}"></a>
+             <p class="Font14 FontW Overflow Lineheight35"><a href="__MODULE__/Res/detail/id/{$vol.id}" target="_blank" title="{$vol.res_name}">{$vol.res_name}</a></p>
+             <p class="Lineheight35 Overflow"><span title="通过动态控制地址的字符数量...">{$vol.res_pro}{$vol.res_city}{$vol.res_area}{$vol.res_address}</span></p>
+            </li>
+       </volist>
+   </ul>
+  </div>
+ </aside>
+</section>
+<script type="text/javascript">
+    function getgoods(e){
+        var obj=$(e).html();
+
+    }
+</script>

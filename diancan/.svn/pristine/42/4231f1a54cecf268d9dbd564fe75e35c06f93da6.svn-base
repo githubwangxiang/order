@@ -1,0 +1,155 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/style/page.css">
+<!--Start content-->
+<section class="Psection">
+ <section class="fslist_navtree">
+  <ul class="select">
+		<li class="select-list">
+			<dl id="select1">
+				<dt>分类：</dt>
+				<dd class="select-all selected"><a href="javascript:">全部</a></dd>
+        <volist name="cate" id="vol">
+              <if condition=" $vol.pid != 0 " >
+              <dd><a href="javascript:">{$vol.cate_name}</a></dd>  
+              </if>
+				
+        </volist>
+			</dl>
+		</li>
+		<li class="select-list">
+			<dl id="select2">
+				<dt>位置：</dt>
+				<dd class="select-all selected"><a href="javascript:">全部</a></dd>
+				<volist name="rest" id="vol">
+        <dd><a href="javascript:">{$vol.res_pro}</a></dd>
+            </volist>
+			</dl>
+		</li>
+        <li class="select-list">
+			<dl id="select4">
+				<dt>价位区间：</dt>
+				        <dd class="select-all selected"><a href="javascript:">全部</a></dd>
+				        <dd id='first' pri_l='0' pri_h='20'><a href="javascript:">20元以下</a></dd>
+                <dd id='second' pri_l='20' pri_h='40'><a href="javascript:">20-40元</a></dd>
+                <dd id='third' pri_l='40' pri_h='60'><a href="javascript:">40-60元</a></dd>
+                <dd id='forth' pri_l='60' pri_h='80'><a href="javascript:">60-80元</a></dd>
+                <dd id='fifth' pri_l='80' pri_h='100'><a href="javascript:">80-100元</a></dd>
+			</dl>
+		</li>
+		<li class="select-result">
+			<dl>
+			 <dd class="select-no">已选择：</dd>
+			</dl>
+		</li>
+	</ul>
+ </section>
+<section class="Fslmenu">
+ <a href="#" title="默认排序">
+  <span>
+  <span>默认排序</span>
+  <span></span>
+  </span>
+ </a>
+ <a href="#" title="评价">
+  <span>
+  <span>评价</span>
+  <span class="s-up"></span>
+  </span>
+ </a>
+ <a href="#" title="销量">
+  <span>
+  <span>销量</span>
+  <span class="s-up"></span>
+  </span>
+ </a>
+ <a href="#" title="价格排序">
+  <span>
+  <span>价格</span>
+  <span class="s-down"></span>
+  </span>
+ </a>
+ <a href="#" title="发布时间排序">
+  <span>
+  <span>发布时间</span>
+  <span class="s-up"></span>
+  </span>
+ </a>
+</section>
+<section class="Fsl">
+ <ul id='sel'>
+  <volist name="rest" id="vol">
+  <li>
+   <a href="__CONTROLLER__/detail/id/{$vol.id}" target="_blank" title="调用产品名/店铺名"><img src="{$vol.res_logo}"></a>
+   <hgroup>
+   <h3>{$vol.res_name}</h3>
+   <h4></h4>
+   </hgroup>
+   <p>菜系：tgy6g</p> 
+   <p>地址：{$vol.res_pro}</p>
+   <p>人均：{$vol.res_price}</p>
+   <p>
+    <span class="DSBUTTON"><a href="__CONTROLLER__/detail/id/{$vol.id}" target="_blank" class="Fontfff">点外卖</a></span>
+   </p>
+   </li>
+   </volist>
+ </ul>
+ <aside>
+  <div class="title">热门商家</div>
+  <div class="C-list">
+    <volist  name="rest"  k="mend" id="vol">
+   <a href="__CONTROLLER__/detail/id/{$vol.id}" target="_blank" title="店铺名称"><img src="{$vol.res_logo}"></a>
+   <p><a href="__CONTROLLER__/detail/id/{$vol.id}" target="_blank">{$vol.res_name}</a></p>
+   <p>
+   <span>人均：{$vol.res_price}元</span>
+   </p>
+   </volist>
+  </div>
+ </aside>
+<!-- <div class="TurnPage">
+  <a href="#">
+  <span class="Prev"><i></i>首页</span>
+  </a>
+  <a href="#"><span class="PNumber">1</span></a>
+  <a href="#"><span class="PNumber">2</span></a>
+  <a href="#">
+  <span class="Next">最后一页<i></i></span>
+  </a>
+ </div> -->
+</section>
+</section>
+<div class="badoo">
+   {$page_html}
+ </div>
+ <script type="text/javascript">
+   $('#first').click(function(){
+      var pri_l=$('#first').attr('pri_l');
+      var pri_h=$('#first').attr('pri_h');
+      // console.log(pri_l);
+      // console.log(pri_h);
+      var data={
+        'pri_l':pri_l,
+        'pri_h':pri_h
+      };
+      $.ajax({
+        'url':'{:U("Home/Res/index")}',
+        'data':data,
+        'type':'post',
+        'dataType':'json',
+        'success':function(response){
+            if(response.code==10000){
+              var str="<ul id='sel'>";
+              $.each(response.data,function(i,v){
+                  srt+='<li><a href="__CONTROLLER__/detail/id/';
+                  str+=v['id'] +'" target="_blank" title="调用产品名/店铺名"><img src="'+ v['res_logo'] +'"></a><hgroup><h3>'+ v['res_name'];
+                  str+= '</h3><h4></h4></hgroup><p>菜系：tgy6g</p> <p>地址：'
+                  str+=  v['res_pro']+'</p><p>人均：'
+                  str+=  v['res_price']+'</p><p><span class="DSBUTTON"><a href="__CONTROLLER__/detail/id/'
+                  str+=v['id']+'" target="_blank" class="Fontfff">点外卖</a></span></p></li>'
+              });
+              str+='</ul>';
+                $('#sel').remove();
+                $('#sel').html($str);
+            }
+        }
+      });
+   });
+ </script>

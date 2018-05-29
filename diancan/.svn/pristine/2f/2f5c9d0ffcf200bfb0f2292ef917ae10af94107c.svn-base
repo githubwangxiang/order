@@ -1,0 +1,123 @@
+
+<!--Start content-->
+<section class="Psection MT20">
+ <form method="post" action="__ACTION__">
+  <table class="Register">
+  <tr>
+  <td width="40%" align="right" class="FontW" id="">用户名：</td>
+  <td><input type="text" id="username" name="user_name" required autofocus></td>
+  <span id="tip"></span>
+  </tr>
+  <tr>
+  <td width="40%" align="right" class="FontW">密码：</td>
+  <td><input type="password" name="password" required></td>
+  </tr>
+  <tr>
+  <td width="40%" align="right" class="FontW">再次确认：</td>
+  <td><input type="password" name="repassword" required></td>
+  </tr>
+  <tr>
+  <td width="40%" align="right" class="FontW">电子邮件：</td>
+  <td><input type="email" name="email" required></td>
+  </tr>
+  <tr>
+  <td width="40%" align="right" class="FontW">手机号码：</td>
+  <td><input type="text" name="user_phone" required pattern="[0-9]{11}" id="phone" placeholder="请输入手机号"></td>
+  </tr>
+  <tr>
+  <td align="right" class="FontW">验证码：</td>
+  <td><input type="text" name="code" id="code" placeholder="请输入验证码">
+  <input type="button" name="" value="发送验证码" id="dyMobileButton"
+     onclick="sendmsg(this);"/></td>
+  </tr>
+ <!--  <tr>
+ <td width="40%" align="right" class="FontW">手机校验码：</td>
+ <td><input type="text" name="code" required pattern="[0-9]{6}"></td>
+ </tr>
+ <tr> -->
+  <td width="40%" align="right"></td>
+  <td><input type="submit" name="submit" class="Submit_b" value="注 册">( 已经是会员，<a href="login.html" class="BlueA">请登录</a> )</td>
+  </tr>
+  </table>
+ </form>
+</section>
+<!--End content-->
+<div class="F-link">
+  <span>友情链接：</span>
+  <a href="http://www.deathghost.cn" target="_blank" title="DeathGhost">DeathGhost</a>
+  <a href="http://www.17sucai.com/pins/15966.html" target="_blank" title="免费后台管理模板">绿色清爽版通用型后台管理模板免费下载</a>
+  <a href="http://www.17sucai.com/pins/17567.html" target="_blank" title="果蔬菜类模板源码">HTML5果蔬菜类模板源码</a>
+  <a href="http://www.17sucai.com/pins/14931.html" target="_blank" title="黑色的cms商城网站后台管理模板">黑色的cms商城网站后台管理模板</a>
+ </div>
+<script type="text/javascript">
+  $(function(){
+    //失去焦点
+    $('#username').blur(function(){
+      //获取输入框的值
+      var username = $(this).val();
+
+      //发送ajax请求
+       $.ajax({
+          'url':'__CONTROLLER__/checkname',
+          'type':'post',
+          'data':'username='+username,
+          'dataType':'json',
+          'success':function(response){
+              console.log(response);
+              if(response.code !== 10000) {
+                  alert(response.msg);
+                  return ;
+              }else{
+                  alert(response.msg);
+               }
+          }
+       })
+    })
+  })
+</script>
+
+<script>
+    //发送短信验证码
+    var time = 60;
+    function sendmsg(_this){
+       if(time == 60){
+              //获取手机号
+              var phone = $('#phone').val();
+              if(phone == ''){
+                  alert("请输入手机号");
+              }
+              //发送ajax请求
+              $.ajax({
+                  'url': '__CONTROLLER__/sendmsg',
+                  'type': 'post',
+                  'data': 'user_phone=' + phone,
+                  'dataType': 'json',
+                  'success':function(response){
+                      if(response.code != 10000){
+                          alert(response.msg);
+                          return;
+                      }else{
+                          alert("发送成功");
+                      }
+                  }
+              })
+       }
+      //以下是倒计时效果
+      if(time > 0){
+           time--;
+           _this.value = "重新发送:" + time + 's';
+           _this.disabled = true;
+      }
+      if(time == 0){
+          time = 60;
+          _this.value = "重新发送验证码";
+                _this.disabled  = false;
+                return ;
+            }
+            //定时器
+      setTimeout(function(){
+          sendmsg(_this);
+      },1000);
+    }
+  </script>
+

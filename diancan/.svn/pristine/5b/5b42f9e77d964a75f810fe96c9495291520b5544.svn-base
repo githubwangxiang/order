@@ -1,0 +1,90 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+/**
+ * Created by PhpStorm.
+ * User: 二狗
+ * Date: 2017/11/10
+ * Time: 10:08
+ */
+header('content-type:text/html;charset=utf-8');
+class OrderController extends CommonController
+{
+    //显示列表订单的首页
+    public function index()
+    {
+        //*****************显示订单
+        //用户id
+        //配送地址
+        //订单编号
+        //商品名称
+        //下单时间
+        //收件人姓名
+        //订单金额
+        //订单状态
+        //支付方式
+        $orders=D('fdorder')->alias('t1')->join(' join user as t2 join address as t3')
+            ->field('t1.*,t2.user_name,t3.address,t3.save_name')
+            ->where('t1.user_id=t2.id and t1.address_id=t3.id')
+            ->select();
+        //将数据进行分配
+        $this->assign('orders',$orders);
+        $this->display('list');
+    }
+
+//将订单进行修改
+
+public function detail()
+{
+    $id=I('post.id');
+    $status=I('post.status');
+    //将数据进行改变
+    $data=['order_status'=>$status];
+
+    $res=D('fdorder')->where("id=$id")->save($data);
+    if($res!==false)
+    {
+        $return=[
+            'code'=>1000,
+            'msg'=>'修改成功',
+        ];
+        $this->ajaxReturn($return);
+    }else
+    {
+        $return=[
+            'code'=>1001,
+            'msg'=>'修改失败',
+        ];
+        $this->ajaxReturn($return);
+    }
+}
+
+
+//删除成功
+    public function del()
+    {
+        $id=I('post.id');
+
+        //将数据进行改变
+        $res=D('fdorder')->where("id=$id")->delete();
+        if($res!==false)
+        {
+            $return=[
+                'code'=>1000,
+                'msg'=>'删除成功',
+            ];
+            $this->ajaxReturn($return);
+        }else
+        {
+            $return=[
+                'code'=>1001,
+                'msg'=>'删除失败',
+            ];
+            $this->ajaxReturn($return);
+        }
+    }
+
+
+
+
+}
